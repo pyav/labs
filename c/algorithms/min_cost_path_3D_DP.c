@@ -44,9 +44,9 @@
  * Solution
  * --------
  *
- * This program calculates cost of path which takes minimum time to reach to an
- * index in a 3D-matrix. The start index is 0,0,0 and the destination index is
- * given as M,N,O. 
+ * This program calculates the cost of the path which takes minimum time to
+ * reach to an index in a 3D-matrix. The start index is 0,0,0 and the
+ * destination index is given as M,N,O. 
  * 
  * Author
  * ------
