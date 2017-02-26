@@ -7,7 +7,7 @@ Following command may be used to compile **.c** files:
  **gcc -Wall \<filename\>**
 
 ## Execution
-The above command generates object file with the name a.out. Following command
+The above command generates object file with the name **a.out**. Following command
 may be used to execute the object file:
 
  **./a.out**
