@@ -119,6 +119,8 @@ void free_all(struct node **node)
 int main(void) 
 {
   int key = -1;
+
+  /* Allocate memory for predecessor and successor */
   struct node *pre = (struct node *) calloc(1, sizeof (struct node));
   struct node *suc = (struct node *) calloc(1, sizeof (struct node));
 
@@ -147,6 +149,7 @@ int main(void)
   printf("The predecessor is: %d\n", pre->data);
   printf("The successor is: %d\n", suc->data);
 
+  /* Cleanup */
   free(pre);
   free(suc);
   free_all(&root);
