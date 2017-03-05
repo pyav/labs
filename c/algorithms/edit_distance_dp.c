@@ -19,11 +19,13 @@
 #define SUCCESS 0
 #define FAILURE -1
 
+/* Minimum of two */
 int min(int a, int b)
 {
   return (a < b)? a: b;
 }
 
+/* Least among three */
 #define min3(a, b, c) min(min(a, b), c)
 
 /* Calculate and return the edit distance value using dp */
@@ -49,6 +51,7 @@ int edit_dist_dp(char *str1, char *str2, size_t l1, size_t l2)
   return E[l1][l2];
 }
 
+/* Main driver code */
 int main(void)
 {
   int edit_distance = -1;
