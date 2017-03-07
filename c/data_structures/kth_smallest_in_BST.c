@@ -58,6 +58,7 @@ void print_tree_inorder(struct node *node)
 
 static int count = 0;
 
+/* Find the kth smallest element */
 void find_kth_smallest_elem(struct node *node, int k)
 {
 	if (node == NULL)
@@ -74,6 +75,7 @@ void find_kth_smallest_elem(struct node *node, int k)
 	find_kth_smallest_elem(node->right, k);
 }
 
+/* Cleanup */
 void free_all(struct node **node)
 {
 	if (*node == NULL)
@@ -91,6 +93,7 @@ int main(void)
 	int k = -1;
 	struct node *root = NULL;
 
+  /* Create the tree */
 	root = insert_node (root, 50);
 	insert_node (root, 10);
 	insert_node (root, 55);
@@ -103,8 +106,10 @@ int main(void)
 	printf("\nEnter the value of k: ");
 	scanf("%d", &k);
 
+  /* Find the kth smallest element */
 	find_kth_smallest_elem(root, k);
 
+  /* Cleanup */
 	free_all(&root);
 
 	return SUCCESS;
