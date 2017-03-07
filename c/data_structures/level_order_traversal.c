@@ -52,6 +52,7 @@ void add_level_order(struct node *root)
   data_array[++count] = root->left;
   data_array[++count] = root->right;
   track_pos = track_pos + 1;
+
   add_level_order(data_array[track_pos]);
 }
 
