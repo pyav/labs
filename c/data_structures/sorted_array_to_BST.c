@@ -12,20 +12,20 @@
 
 /* The node structure */
 struct node {
-	int data;
-	struct node *left;
-	struct node *right;
+  int data;
+  struct node *left;
+  struct node *right;
 };
 
 /* Convert the array into a BST */
 struct node *convert_BST(int left, int right, int a[])
 {
-	if ((left > right) || (right < 0))
-		return NULL;
+  if ((left > right) || (right < 0))
+    return NULL;
 
-	int mid = (left + right) / 2;
-	
-	struct node *node = (struct node *) malloc(sizeof (struct node));
+  int mid = (left + right) / 2;
+
+  struct node *node = (struct node *) malloc(sizeof (struct node));
 
   if (NULL != node) {
     node->data = a[mid];
@@ -39,29 +39,29 @@ struct node *convert_BST(int left, int right, int a[])
 /* Print the BST in sorted order i.e. inorder way */
 void print_BST(struct node *node)
 {
-	if (node == NULL)
-		return;
+  if (node == NULL)
+    return;
 
-	print_BST(node->left);
-	printf("%d", node->data);
-	print_BST(node->right);
+  print_BST(node->left);
+  printf("%d", node->data);
+  print_BST(node->right);
 }
 
 /* Main driver program */
 int main(void)
 {
-	int a[] = {1, 2, 3, 4, 5, 6, 7};
-	int left = 0;
+  int a[] = {1, 2, 3, 4, 5, 6, 7};
+  int left = 0;
 
   /* Get the number of elements */
-	int right = (sizeof (a) / sizeof (a[0])) - 1;
+  int right = (sizeof (a) / sizeof (a[0])) - 1;
 
-	struct node *root = convert_BST(left, right, a);
-	print_BST(root);
+  struct node *root = convert_BST(left, right, a);
+  print_BST(root);
 
-	printf("\n");
+  printf("\n");
 
-	return SUCCESS;
+  return SUCCESS;
 }
 /* End of main driver program */
 
