@@ -53,12 +53,12 @@ int main(void)
   int a[] = {1, 2, 3, 4, 5, 6, 7};
   int left = 0;
 
-  /* Get the number of elements */
+  /* Get the index of last element */
   int right = (sizeof (a) / sizeof (a[0])) - 1;
 
   struct node *root = convert_BST(left, right, a);
-  print_BST(root);
 
+  print_BST(root);
   printf("\n");
 
   return SUCCESS;
