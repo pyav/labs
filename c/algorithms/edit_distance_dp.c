@@ -17,7 +17,7 @@
 #include <string.h>
 
 #define SUCCESS 0
-#define FAILURE -1
+#define FAILURE 1
 
 /* Minimum of two */
 int min(int a, int b)
