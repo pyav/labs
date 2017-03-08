@@ -21,6 +21,7 @@ struct node {
 struct node *new_node(int data)
 {
 	struct node *one_node = NULL;
+
 	one_node = (struct node *) malloc(sizeof (struct node));
 	if (one_node != NULL) {
 		one_node->data = data;
@@ -37,11 +38,10 @@ struct node *insert_node(struct node *node, int data)
 	if (node == NULL)
 		return new_node(data);
 
-	if (data < node->data) {
+	if (data < node->data)
 		node->left = insert_node(node->left, data);
-	} else if (data > node->data){
+	else if (data > node->data)
 		node->right = insert_node(node->right, data);
-	}
 
 	return node;
 }
@@ -57,7 +57,7 @@ void print_tree_inorder(struct node *node)
 }
 
 /* Function to return lowest common ancester */
-struct node* lca(struct node *node, int n1, int n2)
+struct node *lca(struct node *node, int n1, int n2)
 {
 	if (node == NULL)
 		return node;
@@ -86,6 +86,9 @@ void free_all(struct node **node)
 /* Main driver code */
 int main(void)
 {
+  int n1;
+  int n2;
+
 	/* Create the tree */
 	struct node *root = NULL;
 	root = insert_node(root, 20);
@@ -101,15 +104,18 @@ int main(void)
 	printf("\n");
 
 	/* Now check for lowest common ancester */
-	int n1 = 10, n2 = 14;
+	n1 = 10;
+  n2 = 14;
 	struct node *t = lca(root, n1, n2);
 	printf("LCA of %d and %d is %d \n", n1, n2, t->data);
 
-	n1 = 14, n2 = 8;
+	n1 = 14;
+  n2 = 8;
 	t = lca(root, n1, n2);
 	printf("LCA of %d and %d is %d \n", n1, n2, t->data);
 
-	n1 = 10, n2 = 22;
+	n1 = 10;
+  n2 = 22;
 	t = lca(root, n1, n2);
 	printf("LCA of %d and %d is %d \n", n1, n2, t->data);
 
