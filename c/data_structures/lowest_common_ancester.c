@@ -86,11 +86,13 @@ void free_all(struct node **node)
 /* Main driver code */
 int main(void)
 {
-  int n1;
-  int n2;
+  int n1 = 0;
+  int n2 = 0;
+  struct node *t = NULL; /* structure to hold the lca */
 
   /* Create the tree */
   struct node *root = NULL;
+
   root = insert_node(root, 20);
   insert_node(root, 8);
   insert_node(root, 22);
@@ -106,7 +108,7 @@ int main(void)
   /* Now check for lowest common ancester */
   n1 = 10;
   n2 = 14;
-  struct node *t = lca(root, n1, n2);
+  t = lca(root, n1, n2);
   printf("LCA of %d and %d is %d \n", n1, n2, t->data);
 
   n1 = 14;
@@ -119,6 +121,7 @@ int main(void)
   t = lca(root, n1, n2);
   printf("LCA of %d and %d is %d \n", n1, n2, t->data);
 
+  /* Cleanup */
   free_all(&root);
 
   return SUCCESS;
