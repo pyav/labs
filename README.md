@@ -18,8 +18,8 @@ used to assign the execute permission:
  **chmod u+x a.out**
 
 The above command assigns execute permission to the user owner of the file
-**a.out**. The permission may be validated either by executing as per above command
-or by listing the details of file by the command:
+**a.out**. This permission may be validated either by executing the object file
+a.out as per above command or by listing the details of file by the command:
 
  **ls -l a.out**
 
