@@ -69,7 +69,7 @@ int main(void)
   /* Take row input */
   scanf("%d", &N);
 
-  while(N != 0) { /* Terminate if no row */
+  while (N != 0) { /* Terminate if no row */
     /* Take column input */
     scanf("%d", &M);
 
