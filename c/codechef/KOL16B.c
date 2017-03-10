@@ -1,3 +1,7 @@
+/*
+ * Link of the problem statement: https://www.codechef.com/problems/KOL16B
+ */
+
 #include <stdio.h>
 
 int main(void)

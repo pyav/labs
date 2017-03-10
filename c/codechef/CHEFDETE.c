@@ -1,3 +1,7 @@
+/*
+ * Link of the problem statement: https://www.codechef.com/problems/CHEFDETE
+ */
+
 #include<stdio.h>
 #include<stdbool.h>
 
