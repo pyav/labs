@@ -1,6 +1,7 @@
 /*
- * This program prints the longest increasing subsequence in On^2
+ * This program prints the longest increasing subsequence length in On^2
  * 
+ * References: (1) http://www.geeksforgeeks.org/
  * Author: @pyav
  */
 
@@ -47,7 +48,10 @@ int lis(int *arr, size_t n)
 		if (max < lis[i])
 			max = lis[i];
 	
+  /* Cleanup */
 	free(lis);
+
+  /* Return the longest increasing subsequence value */ 
 	return max;
 }
 
@@ -61,7 +65,7 @@ int main(void)
 	size_t n = sizeof arr/ sizeof arr[0];
 
 	/* Call the function which calculates the longest increasing subsequence */
-	printf("%d\n", lis(arr, n));
+	printf("Longest increasing subsequence value = %d\n", lis(arr, n));
 
 	return SUCCESS;
 }
