@@ -1,6 +1,12 @@
 /*
  * Following program counts and prints total number of leaf nodes.
  *
+ * Output
+ * ------
+ *
+ * Total leaf nodes = 4
+ *
+ *
  * Author: @pyav
  */
 
@@ -62,9 +68,11 @@ int main(void)
 	root->right->left = new_node(6);
 	root->right->right = new_node(7);
 
+  /* Call function to count leaf nodes */
 	total_leaf_nodes = count_leaf_nodes(root);
 	printf("\nTotal leaf nodes = %d\n\n", total_leaf_nodes);
 
 	return SUCCESS;
 }
+/* Main */
 
