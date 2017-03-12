@@ -58,7 +58,7 @@ int main(void)
   }
 
   e->size = strnlen(ch, MAX_LEN);
-  memcpy(e->ch, ch, MAX_LEN);
+  memcpy(e->ch, ch, e->size);
   e->ch[e->size] = '\0';
 
   printf("e->size = %zd\n", e->size);
