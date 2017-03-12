@@ -59,7 +59,7 @@ int main(void)
 
   e->size = strnlen(ch, MAX_LEN);
   memcpy(e->ch, ch, MAX_LEN);
-  e->ch[MAX_LEN] = '\0';
+  e->ch[e->size] = '\0';
 
   printf("e->size = %zd\n", e->size);
   printf("e->ch = %s\n", e->ch);
