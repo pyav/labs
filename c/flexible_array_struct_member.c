@@ -52,18 +52,22 @@ int main(void)
   struct test *e = (struct test *) malloc(sizeof (struct test) + 
                                           (MAX_LEN + 1) * sizeof (char));
 
+  /* Validate */
   if (NULL == e) {
     perror("malloc");
     exit(EXIT_FAILURE);
   }
 
+  /* Copy string, max MAX_LEN size */
   e->size = strnlen(ch, MAX_LEN);
   memcpy(e->ch, ch, e->size);
   e->ch[e->size] = '\0';
 
+  /* Print values */
   printf("e->size = %zd\n", e->size);
   printf("e->ch = %s\n", e->ch);
 
+  /* Cleanup */
   free(e);
 
   return SUCCESS;
