@@ -23,3 +23,6 @@ a.out as per above command or by listing the details of file by the command:
 
  **ls -l a.out**
 
+## Valgrind command to check memory leak
+ **valgrind -v --tool=memcheck --leak-check=yes ./a.out**
+
