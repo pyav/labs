@@ -5,9 +5,11 @@
  * It also constructs and prints the longest common subsequence (lcs) and then
  * frees the memory holding the lcs. 
  * 
- * Author: @pyav
  * References: (1) Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
  *             (2) http://www.geeksforgeeks.org
+ *
+ *
+ * Author: @pyav
  */
 
 #include <stdio.h>
