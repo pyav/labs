@@ -9,9 +9,12 @@
  *             (2) http://www.geeksforgeeks.org
  * 
  * Though the book listed in (1) above discusses about few other opeartions, we
- * will concentrate our focus to only the three operations listed above. 
- */
-/******************************************************************************/
+ * will concentrate our focus to only the three operations listed above.
+ *
+ *
+ * Author: @pyav
+ *
+ ******************************************************************************/
 
 #include <stdio.h>
 #include <string.h>
