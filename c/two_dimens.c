@@ -23,31 +23,31 @@
 
 int main(void)
 {
-	int i = 0;
+  int i = 0;
   int j = 0;
   int r = 3;
   int c = 4;
   int k = 0;
-	int *arr = NULL;
-	
-	arr = malloc(r * c * sizeof (int));
+  int *arr = NULL;
+
+  arr = malloc(r * c * sizeof (int));
 
   /* Enter values */
-	for (i = 0; i < r; i++)
-		for (j = 0; j < c; j++)
-			*(arr + i * c + j) = k++;
+  for (i = 0; i < r; i++)
+    for (j = 0; j < c; j++)
+      *(arr + i * c + j) = k++;
 
   /* Access values */
-	for (i = 0; i < r; i++) {
-		for (j = 0; j < c; j++)
-			printf("%d ", *(arr + i * c + j));
+  for (i = 0; i < r; i++) {
+    for (j = 0; j < c; j++)
+      printf("%d ", *(arr + i * c + j));
 
-		printf("\n");
-	}
+    printf("\n");
+  }
 
   /* Cleanup */
-	free(arr);
+  free(arr);
 
-	return SUCCESS;
+  return SUCCESS;
 }
 
