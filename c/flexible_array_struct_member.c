@@ -49,6 +49,8 @@ struct test {
 int main(void) 
 {
   char *ch = "pyav testing";
+
+  /* Allocate memory */
   struct test *e = (struct test *) malloc(sizeof (struct test) + 
                                           (MAX_LEN + 1) * sizeof (char));
 
