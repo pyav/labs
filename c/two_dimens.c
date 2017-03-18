@@ -30,6 +30,7 @@ int main(void)
   int k = 0;
   int *arr = NULL;
 
+  /* Allocate memory equivalent to rows X columns to store int */
   arr = malloc(r * c * sizeof (int));
 
   /* Enter values */
