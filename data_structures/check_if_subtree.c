@@ -10,7 +10,7 @@
  * Referances
  * ----------
  *
- *  (1) http://www.geeksforgeeks.org
+ * (1) http://www.geeksforgeeks.org
  *
  *
  *  Author
