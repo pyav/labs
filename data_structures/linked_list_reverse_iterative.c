@@ -23,19 +23,19 @@
 
 /* Structure, singly linked list */
 struct node {
-	int data;
-	struct node *next;
+  int data;
+  struct node *next;
 };
 
 /* Print the linked list */
 void print_linked_list(struct node *head)
 {
-	struct node *temp = head;
+  struct node *temp = head;
 
-	while (NULL != temp) {
-		printf("%d ", temp->data);
-		temp = temp->next;
-	}
+  while (NULL != temp) {
+    printf("%d ", temp->data);
+    temp = temp->next;
+  }
 
   printf("\n");
 }
@@ -43,51 +43,51 @@ void print_linked_list(struct node *head)
 /* Add a new node */
 void add_node(struct node **head, int data)
 {
-	struct node *one_node = malloc(sizeof (struct node));
+  struct node *one_node = malloc(sizeof (struct node));
 
   if (NULL == one_node) {
     perror("malloc");
     exit(EXIT_SUCCESS);
   }
 
-	one_node->data = data;
-	one_node->next = *head;
-	(*head) = one_node;
+  one_node->data = data;
+  one_node->next = *head;
+  (*head) = one_node;
 }
 
 /* Reverse the linked list */
 void reverse_linked_list(struct node **head)
 {
-	struct node *current = *head;
-	struct node *prev = NULL;
-	struct node *next = NULL;
+  struct node *current = *head;
+  struct node *prev = NULL;
+  struct node *next = NULL;
 
-	while (current != NULL) {
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
-	}
+  while (current != NULL) {
+    next = current->next;
+    current->next = prev;
+    prev = current;
+    current = next;
+  }
 
-	*head = prev;
+  *head = prev;
 }
 
 /* Main driver code */
 int main(void)
 {
-	struct node *head = NULL;
+  struct node *head = NULL;
 
   /* Create linked list */
-	add_node(&head, 1);
-	add_node(&head, 2);
-	add_node(&head, 3);
-	add_node(&head, 4);
+  add_node(&head, 1);
+  add_node(&head, 2);
+  add_node(&head, 3);
+  add_node(&head, 4);
 
   /* Print, reverse and print linked list */
-	print_linked_list(head);
-	reverse_linked_list(&head);
-	print_linked_list(head);
+  print_linked_list(head);
+  reverse_linked_list(&head);
+  print_linked_list(head);
 
-	return SUCCESS;
+  return SUCCESS;
 }
 
