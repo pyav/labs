@@ -84,6 +84,7 @@ bool isSubtree(struct node *T, struct node *S)
 /* Main driver code */
 int main(void)
 {
+  /* First tree */
   struct node *T = new_node(26);
   T->right = new_node(3);
   T->right->right = new_node(3);
