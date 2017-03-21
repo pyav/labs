@@ -7,7 +7,7 @@
  * Tree S is subtree of tree T
  *
  *
- * Referances
+ * References
  * ----------
  *
  * (1) http://www.geeksforgeeks.org
