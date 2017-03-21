@@ -62,7 +62,7 @@ void reverse_linked_list(struct node **head)
   struct node *prev = NULL;
   struct node *next = NULL;
 
-  while (current != NULL) {
+  while (NULL != current) {
     next = current->next;
     current->next = prev;
     prev = current;
