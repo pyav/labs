@@ -88,7 +88,7 @@ int main(void)
   /* Print all the node data */
   print_nodes(head);
 
-  /* Test cases to check and print wether a particular number is present */
+  /* Test cases to check and print whether a particular number is present */
   find_node(head, 3)? printf("\n3: Yes\n"): printf("\n3: No\n");
   find_node(head, 1)? printf("1: Yes\n"): printf("1: No\n");
   find_node(head, 2)? printf("2: Yes\n"): printf("2: No\n");
