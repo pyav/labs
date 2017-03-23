@@ -47,7 +47,7 @@ void add_node(struct node **head, int data)
 
   if (NULL == one_node) {
     perror("malloc");
-    exit(EXIT_SUCCESS);
+    exit(EXIT_FAILURE);
   }
 
   one_node->data = data;
