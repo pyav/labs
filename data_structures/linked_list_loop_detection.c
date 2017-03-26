@@ -21,6 +21,7 @@
 #define SUCCESS true
 #define FAILURE false
 
+/* Node Structure */
 struct node {
 	int data;
 	struct node *next;
