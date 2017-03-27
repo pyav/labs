@@ -25,7 +25,6 @@
 #include <stdlib.h>
 
 #define SUCCESS 0
-#define FAILURE 1
 
 /* Node structure */
 struct node {
