@@ -10,7 +10,7 @@
  *
  *
  * Author: @pyav
- */
+ ******************************************************************************/
 
 #include <stdio.h>
 #include <string.h>
@@ -53,6 +53,8 @@ int lcs(char *X, char *Y, size_t len_X, size_t len_Y)
   /* Find the longest common subsequence */
   int index = c[len_X][len_Y];
   char *lcs = (char *) malloc((1 + index) * sizeof (char));
+
+  /* Validate */
   if (NULL == lcs) {
     perror("malloc");
     return FUNC_FAILURE;
