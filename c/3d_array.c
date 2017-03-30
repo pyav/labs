@@ -9,6 +9,14 @@
  * fourth fifth sixth 
  *
  *
+ * NOTE
+ * ----
+ *
+ * Another way to demonstrate this array usage could be to use character pointer
+ * to the strings of 2D arrary. The signature could be 
+ * char *arr[MAX_FIRST_D][MAX_SECOND_D]
+ *
+ *
  * Author
  * ------
  *
