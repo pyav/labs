@@ -1,6 +1,6 @@
 /*
- * Following code rotates a 2D matrix clockwise by 90 degree. Check the output
- * below to get more idea on this.
+ * Following code rotates the data in a 2D matrix clockwise by 90 degree. Check
+ * the output below to get more idea on this.
  *
  *
  * Output
