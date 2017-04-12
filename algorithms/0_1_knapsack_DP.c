@@ -64,10 +64,13 @@ int main(void)
 {
   int i = 0;
   int W = 5;
+
+  /* Declare weight array, value array and calculate the number of elements */
   int wt[] = {1, 2, 3};
   int val[] = {6, 10, 12};
   int n = sizeof (val)/ sizeof (val[0]);
 
+  /* Print the values */
   printf("\nThe weight array: ");
   for (i = 0; i < n; i++)
     printf("%d ", wt[i]);
@@ -78,6 +81,7 @@ int main(void)
 
   printf("\nTotal weight capacity is: %d\n", W);
 
+  /* Calculate the Knapsack value and print it */
   printf("Max value = %d\n\n", knapsack(W, wt, val, n));
 
   return SUCCESS;
