@@ -1,5 +1,5 @@
 /*
- * Following code demonstrates arithmatic operation on char variables.
+ * Following code demonstrates arithmetic operation on char variables.
  *
  * Output
  * ------
