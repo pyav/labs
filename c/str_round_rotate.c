@@ -39,32 +39,32 @@
 int main(void)
 {
   char *sub_str = NULL;
-	char *main_str = NULL;
-	char *final_str = NULL;
+  char *main_str = NULL;
+  char *final_str = NULL;
   char *final_main_str = NULL;
 
-	main_str = malloc(64 * sizeof (char));
-	sub_str = malloc(5 * sizeof (char));
+  main_str = malloc(64 * sizeof (char));
+  sub_str = malloc(5 * sizeof (char));
 
-	printf("\nEnter main string: ");
-	scanf("%s", main_str);
+  printf("\nEnter main string: ");
+  scanf("%s", main_str);
 
-	printf("Enter sub string: ");
-	scanf("%s", sub_str);
+  printf("Enter sub string: ");
+  scanf("%s", sub_str);
 
   /* Concatenate */
-	final_main_str = strcat(main_str, main_str);
+  final_main_str = strcat(main_str, main_str);
 
   /* Check the presence */
-	if ((final_str = strstr(final_main_str, sub_str)) != NULL)
-		printf ("Found at: %p\n\n", &final_str);
-	else
-		printf ("Not found.\n\n");
+  if ((final_str = strstr(final_main_str, sub_str)) != NULL)
+    printf ("Found at: %p\n\n", &final_str);
+  else
+    printf ("Not found.\n\n");
 
   /* Cleanup */
-	free (main_str);
-	free (sub_str);
+  free (main_str);
+  free (sub_str);
 
-	return SUCCESS;
+  return SUCCESS;
 }
 
