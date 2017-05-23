@@ -21,9 +21,9 @@
 
 int main(void)
 {
-	int x = (printf("Pyav"), printf("1234"));
+  int x = (printf("Pyav"), printf("1234"));
 
-	printf ("\n%d\n", x);
+  printf ("\n%d\n", x);
 
-	return 0;
+  return 0;
 }
