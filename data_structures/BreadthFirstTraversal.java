@@ -1,6 +1,3 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-
 /**
  * Following code shows Breadth First traversal. 
  * The output of this code is:
@@ -11,6 +8,10 @@ import java.util.LinkedList;
  * @author pyav
  *
  */
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class BreadthFirstTraversal {
 
 	private int val;
