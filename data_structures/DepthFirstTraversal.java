@@ -16,6 +16,7 @@ public class DepthFirstTraversal {
 	private int nodes;
 	private LinkedList<Integer> adj[];
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	DepthFirstTraversal(int n) {
 		nodes = n;
 		adj = new LinkedList[nodes];
@@ -44,10 +45,10 @@ public class DepthFirstTraversal {
 		
 	}
 	
-	void DFS(int v) {
+	void DFS(int vertex) {
 		boolean visited[] = new boolean[nodes];
 		
-		dfsOperate(v, visited);
+		dfsOperate(vertex, visited);
 	}
 	
 	public static void main(String[] args) {
