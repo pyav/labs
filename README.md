@@ -36,5 +36,8 @@ generates a **.class** file which can be run by the following command:
  **java \<filename without extension\>**
 
 ## Check memory leak
- valgrind -v --tool=memcheck --leak-check=yes ./a.out
+Execute the following command to check mem-leak for the object file generated
+after compiling the c code:
+
+ **valgrind -v --tool=memcheck --leak-check=yes ./a.out**
 
