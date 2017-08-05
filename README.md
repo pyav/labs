@@ -2,13 +2,17 @@
 This is a repository of codes which I work on while solving problems, codes which I experiment on while learning a topic in computer science. 
 
 ## Compilation
-Following command may be used to compile **.c** files:
+Following command may be used to compile a **.c** file:
 
  **gcc -Wall \<filename\>**
 
+Following command may be used to compile a **.java** file:
+
+ **javac HelloWorld.java**
+
 ## Execution
-The above command generates object file with the name **a.out**. Following command
-may be used to execute the object file:
+The above command for compiling a **.c** file generates object file with the
+name **a.out**. Following command may be used to execute the object file:
 
  **./a.out**
 
@@ -22,6 +26,13 @@ The above command assigns execute permission to the user owner of the file
 a.out as per above command or by listing the details of file by the command:
 
  **ls -l a.out**
+
+Executing Java code
+-------------------
+The compilation of a **.java** file with javac command generates a **.class**
+file which can be run by the following command:
+
+ **java HelloWorld**
 
 ## Valgrind command to check memory leak
  valgrind -v --tool=memcheck --leak-check=yes ./a.out
