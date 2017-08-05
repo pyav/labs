@@ -8,7 +8,7 @@ Following command may be used to compile a **.c** file:
 
 Following command may be used to compile a **.java** file:
 
- **javac HelloWorld.java**
+ **javac \<filename\>**
 
 ## Execution
 The above command for compiling a **.c** file generates object file with the
@@ -29,10 +29,10 @@ a.out as per above command or by listing the details of file by the command:
 
 Executing Java code
 -------------------
-The compilation of a **.java** file with javac command generates a **.class**
-file which can be run by the following command:
+The compilation of a **.java** file with javac command (as given above)
+generates a **.class** file which can be run by the following command:
 
- **java HelloWorld**
+ **java <filename without extension>**
 
 ## Valgrind command to check memory leak
  valgrind -v --tool=memcheck --leak-check=yes ./a.out
