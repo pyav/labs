@@ -14,8 +14,8 @@
  */
 
 class Stack {
-	int stk[] = new int[10];
-	int tos;
+	private int stk[] = new int[10];
+	private int tos;
 	
 	Stack() {
 		tos = -1;
@@ -58,7 +58,7 @@ public class StackTest {
 		for (i = 0; i < 10; i++) {
 			System.out.printf("%d ", stck.pop());
 		}
-		
+    
 	}
 
 }
