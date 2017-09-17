@@ -115,6 +115,7 @@ public class MinHeap {
 	if ((left < heapSize) && (heapArray[left] < heapArray[min])) {
 	    min = left;
 	}
+
 	if ((right < heapSize) && (heapArray[right] < heapArray[min])) {
 	    min = right;
 	}
