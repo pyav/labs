@@ -1,6 +1,7 @@
 /**
  *
- * Following program calculates the minimum trials in Egg Drop puzzle.
+ * Following program calculates the minimum trials in Egg Drop puzzle in
+ * recursive way.
  *
  * Output
  * ------
