@@ -32,6 +32,12 @@ a.out as per above command or by listing the details of file by the command:
 
  **ls -l a.out**
 
+#### Check memory leak 
+Execute the following command to check mem-leak for the object file generated
+after compiling the c code:
+
+ **valgrind -v --tool=memcheck --leak-check=yes ./a.out**
+
 ### Execute Java code 
 The compilation of a **.java** file with javac command (as
 given above) generates a **.class** file which can be run by the following
@@ -43,10 +49,4 @@ command:
 Following command may be executed to run a python file:
 
  **python \<filename\>**
-
-### Check memory leak 
-Execute the following command to check mem-leak for the object file generated
-after compiling the c code:
-
- **valgrind -v --tool=memcheck --leak-check=yes ./a.out**
 
