@@ -32,7 +32,7 @@ a.out as per above command or by listing the details of file by the command:
 
  **ls -l a.out**
 
-#### Check memory leak 
+### Check memory leak 
 Execute the following command to check mem-leak for the object file generated
 after compiling the c code:
 
