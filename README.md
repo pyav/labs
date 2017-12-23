@@ -40,7 +40,7 @@ command:
  **java \<filename without extension\>**
 
 ### Run a python code 
-Following command may be executed to run a python file
+Following command may be executed to run a python file:
 
  **python \<filename\>**
 
