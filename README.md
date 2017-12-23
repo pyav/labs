@@ -15,9 +15,9 @@ Following command may be used to compile a **.java** file:
  **javac \<filename\>**
 
 ## Execution 
-### Execute c code The above command for compiling a **.c** file
-generates object file with the name **a.out**. Following command may be used to
-execute the object file:
+### Execute c code 
+The above command for compiling a **.c** file generates object file with the
+name **a.out**. Following command may be used to execute the object file:
 
  **./a.out**
 
@@ -44,7 +44,7 @@ Following command may be executed to run a python file
 
  **python \<filename\>**
 
-## Check memory leak 
+### Check memory leak 
 Execute the following command to check mem-leak for the object file generated
 after compiling the c code:
 
