@@ -1,27 +1,34 @@
-Source: [ https://www.python.org/dev/peps/pep-0008/ ]
+Source
 -------
- 
-NOTE: Only a snippet is taken from the above link and mentioned below for quick
-      reference. 
+    https://www.python.org/dev/peps/pep-0008/
+
+NOTE
+----
+    Only a snippet is taken from the above link and mentioned below for
+    quick reference. 
 
 Indentation
 -----------
     Use 4 spaces for indentation
     
     Indentation for continuation line:
-          foo = long_function_name(var_one, var_two,
-                                   var_three, var_four)
+        foo = long_function_name(var_one, var_two, 
+		                             var_three, var_four)
 
     Note: There are other examples listed as recommended and not recommended on
           the above link.
 
     Multi-line conditional statement's distinction from its definition:
-          if (this_is_one_thing and
-              that_is_another_thing):
-              # Since both conditions are true, we can frobnicate.
-              do_something()
+        if (this_is_one_thing and 
+		  		  that_is_another_thing):
+		  			# Since both conditions are true, we can frobnicate.
+		  			do_something()
 
 Tabs or Spaces
 --------------
     Spaces are the preferred indentation method.
+
+Maximum line length
+-------------------
+    Limit all lines to a maximum of 79 characters.
 
