@@ -8,7 +8,7 @@ explore.
 ## Compilation 
 Following command may be used to compile a **.c** file:
 
- **_gcc -Wall \<filename\>_**
+ _gcc -Wall \<filename\>_
 
 Following command may be used to compile a **.java** file:
 
