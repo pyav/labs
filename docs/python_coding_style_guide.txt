@@ -20,9 +20,9 @@ Indentation
 
     Multi-line conditional statement's distinction from its definition:
         if (this_is_one_thing and 
-		  		  that_is_another_thing):
-		  			# Since both conditions are true, we can frobnicate.
-		  			do_something()
+            that_is_another_thing):
+            # Since both conditions are true, we can frobnicate.
+            do_something()
 
 Tabs or Spaces
 --------------
