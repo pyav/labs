@@ -13,7 +13,7 @@ Indentation
     
     Indentation for continuation line:
         foo = long_function_name(var_one, var_two, 
-		                             var_three, var_four)
+                                 var_three, var_four)
 
     Note: There are other examples listed as recommended and not recommended on
           the above link.
