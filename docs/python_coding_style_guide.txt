@@ -1,6 +1,9 @@
 Source: [ https://www.python.org/dev/peps/pep-0008/ ]
 -------
  
+NOTE: Only a snippet is taken from the above link and mentioned below for quick
+      reference. 
+
 Indentation
 -----------
     Use 4 spaces for indentation
