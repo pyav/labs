@@ -21,5 +21,7 @@ Indentation
               # Since both conditions are true, we can frobnicate.
               do_something()
 
+Tabs or Spaces
+--------------
     Spaces are the preferred indentation method.
 
