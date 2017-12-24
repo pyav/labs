@@ -53,6 +53,7 @@ Following command may be executed to run a python file:
 ### Check inconsistent use of tabs and spaces
 Run the following command(s):
 
- _python -tt ./<filename>_
+ _python -tt ./\<filename\>_
+ 
  _python -m tabnanny -v ._
 
