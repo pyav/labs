@@ -32,3 +32,10 @@ Maximum line length
 -------------------
     Limit all lines to a maximum of 79 characters.
 
+Line break when a binary operator is used
+-----------------------------------------
+    Line break before the binary operators:
+        income = daily_wage
+                 + extra_income
+                 - expenses
+
