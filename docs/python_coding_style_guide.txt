@@ -35,7 +35,15 @@ Maximum line length
 Line break when a binary operator is used
 -----------------------------------------
     Line break before the binary operators:
-        income = daily_wage
-                 + extra_income
-                 - expenses
+        income = (daily_wage
+                  + extra_income
+                  - expenses)
 
+Blank lines
+-----------
+    Surround top-level function and class definitions with two blank lines.
+    Method definitions inside a class are surrounded by a single blank line.
+    Blank line may be used to separate groups of related functions.
+    Blank lines may be omitted between a bunch of related one-liners.
+    Blank lines should be used to separate logical sections in functions.
+    
