@@ -46,4 +46,11 @@ Blank lines
     Blank line may be used to separate groups of related functions.
     Blank lines may be omitted between a bunch of related one-liners.
     Blank lines should be used to separate logical sections in functions.
-    
+
+Source File Encoding
+--------------------
+    Code in the core Python distribution should always use UTF-8 (or ASCII in
+    Python 2).
+    Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
+    encoding declaration.
+
