@@ -54,3 +54,7 @@ Source File Encoding
     Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
     encoding declaration.
 
+Imports
+-------
+    Imports should usually be on separate lines.
+    
