@@ -63,7 +63,7 @@ Imports
         Imports should be grouped in the following order:
         (a) standard library imports
         (b) related third party imports
-        (c)	local application/library specific imports
+        (c) local application/library specific imports
 
         You should put a blank line between each group of imports.
 
