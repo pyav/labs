@@ -9,16 +9,15 @@ NOTE
 
 Indentation
 -----------
-    Use 4 spaces for indentation
-    
-    Indentation for continuation line:
+    (1) Use 4 spaces for indentation
+    (2) Indentation for continuation line:
         foo = long_function_name(var_one, var_two, 
                                  var_three, var_four)
 
-    Note: There are other examples listed as recommended and not recommended on
-          the above link.
+        Note: There are other examples listed as recommended and not
+              recommended on the above link.
 
-    Multi-line conditional statement's distinction from its definition:
+    (3) Multi-line conditional statement's distinction from its definition:
         if (this_is_one_thing and 
             that_is_another_thing):
             # Since both conditions are true, we can frobnicate.
@@ -41,20 +40,30 @@ Line break when a binary operator is used
 
 Blank lines
 -----------
-    Surround top-level function and class definitions with two blank lines.
-    Method definitions inside a class are surrounded by a single blank line.
-    Blank line may be used to separate groups of related functions.
-    Blank lines may be omitted between a bunch of related one-liners.
-    Blank lines should be used to separate logical sections in functions.
+    (1) Surround top-level function and class definitions with two blank lines.
+    (2) Method definitions inside a class are surrounded by a single blank line.
+    (3) Blank line may be used to separate groups of related functions.
+    (4) Blank lines may be omitted between a bunch of related one-liners.
+    (5) Blank lines should be used to separate logical sections in functions.
 
 Source File Encoding
 --------------------
-    Code in the core Python distribution should always use UTF-8 (or ASCII in
-    Python 2).
-    Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
-    encoding declaration.
+    (1) Code in the core Python distribution should always use UTF-8 (or ASCII in
+        Python 2).
+    (2) Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
+        encoding declaration.
 
 Imports
 -------
-    Imports should usually be on separate lines.
-    
+    (1) Imports should usually be on separate lines. But it is okay to say: 
+        from subprocess import Popen, PIPE
+    (2) Imports are always put at the top of the file, just after any module
+        comments and docstrings, and before module globals and constants.
+
+        Imports should be grouped in the following order:
+        (a) standard library imports
+        (b) related third party imports
+        (c)	local application/library specific imports
+
+        You should put a blank line between each group of imports.
+
