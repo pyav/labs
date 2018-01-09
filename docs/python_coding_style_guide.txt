@@ -66,4 +66,6 @@ Imports
         (c) local application/library specific imports
 
         You should put a blank line between each group of imports.
+    (3) Absolute imports are recommended.
+
 
