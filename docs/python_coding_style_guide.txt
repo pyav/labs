@@ -72,29 +72,29 @@ Imports
 Module level dunder names
 -------------------------
     Module level "dunders" (i.e. names with two leading and two trailing
-		underscores) such as __all__, __author__, __version__, etc. should be
-		placed after the module docstring but before any import statements except
-		from __future__ imports.
-		
-		For example:
-		    """This is an example module. """
-
-				from __future__ import barry_as_FLUFL
-
-				__all__ = ['a', 'b', 'c']
-				__version__ = '0.1'
-				__author__ = 'Cardinal Biggles'
-
-				import os
-				import sys
+    underscores) such as __all__, __author__, __version__, etc. should be
+    placed after the module docstring but before any import statements except
+    from __future__ imports.
+    
+    For example:
+        """This is an example module. """
+        
+        from __future__ import barry_as_FLUFL
+        
+        __all__ = ['a', 'b', 'c']
+        __version__ = '0.1'
+        __author__ = 'Cardinal Biggles'
+        
+        import os
+        import sys
 
 String Quotes
 -------------
     Single-quoted strings and double-quoted strings are the same. When a string
-		contains single or double quote characters, however, use the other one to
-		avoid backslashes in the string. It improves readability.
-
-		Also read:
+    contains single or double quote characters, however, use the other one to
+    avoid backslashes in the string. It improves readability.
+    
+    Also read:
         https://www.python.org/dev/peps/pep-0257/
 
 
