@@ -14,29 +14,29 @@
  */
 
 class First {
-	int i;
+    int i;
 }
 
 class Second extends First {
-	int i;
-
-	void setData(int a, int b) {
-		super.i = a;
-		i = b;
-	}
-
-	void printData() {
-		System.out.printf("i in super class = %d", super.i);
-		System.out.printf("\ni in sub class = %d", i);
-	}
+    int i;
+    
+    void setData(int a, int b) {
+        super.i = a;
+        i = b;
+    }
+    
+    void printData() {
+        System.out.printf("i in super class = %d", super.i);
+        System.out.printf("\ni in sub class = %d", i);
+    }
 }
 
 public class SuperAccessSameMember {
-
-	public static void main(String[] args) {
-		Second obj = new Second();
-		obj.setData(1, 2);
-		obj.printData();
-	}
-
+    
+    public static void main(String[] args) {
+        Second obj = new Second();
+        obj.setData(1, 2);
+        obj.printData();
+    }
+    
 }
