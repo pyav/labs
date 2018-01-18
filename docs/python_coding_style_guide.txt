@@ -97,4 +97,11 @@ String Quotes
     Also read:
         https://www.python.org/dev/peps/pep-0257/
 
+Whitespaces in expressions and statements
+-----------------------------------------
+    Avoid in the following situations:
+    (1) Immediately inside parentheses, brackets or braces.
+    (2) Between a trailing comma and a following close parenthesis.
+    (3) Immediately before a comma, semicolon, or colon.
+
 
