@@ -1,0 +1,14 @@
+syntax on
+set ruler
+set ignorecase
+set hlsearch
+set showmatch
+set shiftwidth=4
+set tabstop=4
+set autoindent
+set wrap
+set smartindent
+set lbr
+set tw=79
+set expandtab
+set formatoptions+=r

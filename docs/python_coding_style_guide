@@ -122,4 +122,6 @@ Whitespaces in expressions and statements
             ham[ : upper]
     (5) Immediately before the open parenthesis that starts the argument list of a function call.
     (6) Immediately before the open parenthesis that starts an indexing or slicing.
+    (7) More than one space around an assignment (or other) operator to align
+        it with another.
 
