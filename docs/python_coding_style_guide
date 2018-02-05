@@ -127,7 +127,6 @@ Whitespaces in expressions and statements
 
 Other recommendation
 --------------------
-
     1. Avoid trailing whitespaces anywhere.
     2. Always surround these binary operators with a single space on either
        side: assignment (=), augmented assignment (+=, -= etc.), comparisons 
