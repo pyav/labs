@@ -9,15 +9,15 @@ NOTE
 
 Indentation
 -----------
-    (1) Use 4 spaces for indentation
-    (2) Indentation for continuation line:
+    1. Use 4 spaces for indentation
+    2. Indentation for continuation line:
         foo = long_function_name(var_one, var_two, 
                                  var_three, var_four)
 
         Note: There are other examples listed as recommended and not
               recommended on the above link.
 
-    (3) Multi-line conditional statement's distinction from its definition:
+    3. Multi-line conditional statement's distinction from its definition:
         if (this_is_one_thing and 
             that_is_another_thing):
             # Since both conditions are true, we can frobnicate.
@@ -40,24 +40,24 @@ Line break when a binary operator is used
 
 Blank lines
 -----------
-    (1) Surround top-level function and class definitions with two blank lines.
-    (2) Method definitions inside a class are surrounded by a single blank line.
-    (3) Blank line may be used to separate groups of related functions.
-    (4) Blank lines may be omitted between a bunch of related one-liners.
-    (5) Blank lines should be used to separate logical sections in functions.
+    1. Surround top-level function and class definitions with two blank lines.
+    2. Method definitions inside a class are surrounded by a single blank line.
+    3. Blank line may be used to separate groups of related functions.
+    4. Blank lines may be omitted between a bunch of related one-liners.
+    5. Blank lines should be used to separate logical sections in functions.
 
 Source File Encoding
 --------------------
-    (1) Code in the core Python distribution should always use UTF-8 (or ASCII in
+    1. Code in the core Python distribution should always use UTF-8 (or ASCII in
         Python 2).
-    (2) Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
+    2. Files using ASCII (in Python 2) or UTF-8 (in Python 3) should not have an
         encoding declaration.
 
 Imports
 -------
-    (1) Imports should usually be on separate lines. But it is okay to say: 
+    1. Imports should usually be on separate lines. But it is okay to say: 
         from subprocess import Popen, PIPE
-    (2) Imports are always put at the top of the file, just after any module
+    2. Imports are always put at the top of the file, just after any module
         comments and docstrings, and before module globals and constants.
 
         Imports should be grouped in the following order:
@@ -66,8 +66,8 @@ Imports
         (c) local application/library specific imports
 
         You should put a blank line between each group of imports.
-    (3) Absolute imports are recommended.
-    (4) Wildcard imports should be avoided. 
+    3. Absolute imports are recommended.
+    4. Wildcard imports should be avoided. 
 
 Module level dunder names
 -------------------------
@@ -100,10 +100,10 @@ String Quotes
 Whitespaces in expressions and statements
 -----------------------------------------
     Avoid in the following situations:
-    (1) Immediately inside parentheses, brackets or braces.
-    (2) Between a trailing comma and a following close parenthesis.
-    (3) Immediately before a comma, semicolon, or colon.
-    (4) In a slice the colon acts like a binary operator, and should have equal
+    1. Immediately inside parentheses, brackets or braces.
+    2. Between a trailing comma and a following close parenthesis.
+    3. Immediately before a comma, semicolon, or colon.
+    4. In a slice the colon acts like a binary operator, and should have equal
         amounts on either side (treating it as the operator with the lowest 
         priority).
         In an extended slice, both colons must have the same amount of spacing 
@@ -120,8 +120,21 @@ Whitespaces in expressions and statements
             ham[1: 9], ham[1 :9], ham[1:9 :3]
             ham[lower : : upper]
             ham[ : upper]
-    (5) Immediately before the open parenthesis that starts the argument list of a function call.
-    (6) Immediately before the open parenthesis that starts an indexing or slicing.
-    (7) More than one space around an assignment (or other) operator to align
+    5. Immediately before the open parenthesis that starts the argument list of a function call.
+    6. Immediately before the open parenthesis that starts an indexing or slicing.
+    7. More than one space around an assignment (or other) operator to align
         it with another.
 
+Other recommendation
+--------------------
+
+    1. Avoid trailing whitespaces anywhere.
+    2. Always surround these binary operators with a single space on either
+       side: assignment (=), augmented assignment (+=, -= etc.), comparisons 
+       (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, 
+       not).
+    3. If operators with different priorities are used, consider adding
+       whitespace around the operators with the lowest priority(ies). 
+       Never use more than one space, and always have the same amount of 
+       whitespace on both sides of a binary operator.
+    
