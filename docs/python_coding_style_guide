@@ -136,4 +136,21 @@ Other recommendation
        whitespace around the operators with the lowest priority(ies). 
        Never use more than one space, and always have the same amount of 
        whitespace on both sides of a binary operator.
-    
+    4. Don't use spaces around the = sign when used to indicate a keyword
+       argument or a default parameter value.
+    5. Function annotations should use the normal rules for colons and always
+       have spaces around the -> arrow if present.
+       Yes:
+           def munge(input: AnyStr): ...
+           def munge() -> AnyStr: ...
+    6. When combining an argument annotation with a default value, use spaces
+       around the = sign (but only for those arguments that have both an
+       annotation and a default).
+       Yes:
+           def munge(sep: AnyStr = None): ...
+           def munge(input: AnyStr, sep: AnyStr = None, limit=1000): ...
+    7. Compound statements (multiple statements on the same line) are generally
+       discouraged.
+    8. While sometimes it's okay to put an if/for/while with a small body on
+       the same line, never do this for multi-clause statements. 
+
