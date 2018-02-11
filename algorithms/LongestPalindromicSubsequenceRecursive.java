@@ -2,15 +2,11 @@
  * Following program demonstrates the calculation of the length of the longest
  * palindromic subsequence.
  * 
- * 
  * Output
  * ------
- * 
  * The longest palindromic subsequence has length = 7
  * 
- * 
  * @author pyav
- * 
  */
 
 public class LongestPalindromicSubsequenceRecursive {
