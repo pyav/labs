@@ -3,7 +3,7 @@
 '''
 Following program demonstrates nested dictionary access techniques.
 
-Output (python dictionary.py)
+Output (python nested_dictionary.py)
 ------
 
 {'Second': {'Second_1': 'Second_1_1', 'Second_2': 'Second_2_1'}, 'First': {'First_1': 'First_1_1', 'First_2': 'First_2_1'}}
