@@ -7,7 +7,6 @@
  * c = 3
  * c from overridden method = 3
  *
- *
  * @author pyav
  */
 
