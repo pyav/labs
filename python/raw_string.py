@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 '''
-
 __author__ = 'pyav'
 
 Command
@@ -13,7 +12,6 @@ Output
 a
 umber
 a\number
-
 '''
 
 print('a\number')
