@@ -49,6 +49,8 @@ command:
 Following command may be executed to run a python file:
 
     python <filename>
+    or,
+    python3 <filename>
 
 ### Check inconsistent use of tabs and spaces
 Run the following command(s):
