@@ -6,7 +6,6 @@ __author__ = pyav
 Output
 ------
 first
-
 '''
 
 class A:
