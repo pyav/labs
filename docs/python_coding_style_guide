@@ -154,3 +154,12 @@ Other recommendation
     8. While sometimes it's okay to put an if/for/while with a small body on
        the same line, never do this for multi-clause statements. 
 
+When to use trailing commas
+---------------------------
+    1. Trailing commas are usually optional, except they are mandatory when
+       making a tuple of one element .
+    2. For clarity, it is recommended to surround the latter in (technically
+       redundant) parentheses.
+    3. No trailing comma on the same line as closing brackets except above case
+       of single tuple element.
+
