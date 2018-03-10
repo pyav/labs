@@ -20,4 +20,3 @@ print(val + ', the bad beast')
 
 val = 'pyav' ', the bad beast'
 print(val)
-
