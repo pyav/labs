@@ -12,6 +12,7 @@ Output
 a
 umber
 a\number
+
 '''
 
 print('a\number')
