@@ -6,7 +6,6 @@
  * ------
  * The longest palindromic subsequence has length = 7
  * 
- * 
  * @author pyav
  */
 
