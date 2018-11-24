@@ -48,10 +48,10 @@ int lis(int *arr, size_t n)
 		if (max < lis[i])
 			max = lis[i];
 	
-  /* Cleanup */
+    /* Cleanup */
 	free(lis);
 
-  /* Return the longest increasing subsequence value */ 
+    /* Return the longest increasing subsequence value */ 
 	return max;
 }
 
