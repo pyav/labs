@@ -12,3 +12,8 @@ set lbr
 set tw=79
 set expandtab
 set formatoptions+=r
+
+if & diff
+    colorscheme evening
+endif
+
