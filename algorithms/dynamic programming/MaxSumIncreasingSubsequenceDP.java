@@ -10,7 +10,7 @@
  *
  */
 
-public class MaxSumIncreasinSubsequence {
+public class MaxSumIncreasingSubsequenceDP {
 
 	public static void main(String[] args) {
 		int arr[] = new int[]{1, 101, 2, 3, 100, 4, 5};
