@@ -1,7 +1,6 @@
 /**
  * Following code demonstrates the adjacency list representation of a graph.
  * 
- * 
  * Output
  * ------
  * Vertex 0: 1  4 
@@ -12,7 +11,6 @@
  * 
  * 
  * @author pyav
- * 
  */
 
 import java.util.LinkedList;
