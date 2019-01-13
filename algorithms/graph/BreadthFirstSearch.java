@@ -1,4 +1,3 @@
-
 /**
  * Following code demonstrates the Breadth First Search Graph traversal from a given source vertex.
  * 
