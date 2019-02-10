@@ -43,8 +43,8 @@ public class ShortestDestination {
 	 * @return List of (x, y) co-ordinates to deliver to.
 	 */
 	List<List<Integer>> ClosestDestinations(int numDestinations,
-											 List<List<Integer>> allLocations, 
-											 int numDeliveries)
+                                            List<List<Integer>> allLocations, 
+                                            int numDeliveries)
 	{
 		Map<Integer, List<List<Integer>>> distanceCoOrdinatesMap = new HashMap<Integer, List<List<Integer>>>();
 		// Iterate over all the values
