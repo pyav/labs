@@ -8,7 +8,7 @@
  * [[1, -1], [1, 2]]
  *
  * 
- * author = pyav
+ * @author = pyav
  */
 
 import java.util.ArrayList;
