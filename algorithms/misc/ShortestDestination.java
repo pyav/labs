@@ -1,6 +1,6 @@
 /**
  * Following program returns the list of 2D co-ordinates which are the 
- * nearest ones from (0. 0) based on an input co-ordinates. 
+ * nearest ones from (0. 0) based on an input of co-ordinates. 
  * 
  * Output
  * ------
