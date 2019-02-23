@@ -54,21 +54,16 @@ public class LongestBitonicSubsequence {
 	private static int lbs(int[] arr, int length) {
 
 		// Create an array to store the calculated values
-		int[] valArray = new int[length];
+		int[] valArr = new int[length];
 
 		for (int i = 0; i < length; i++) {
 			int lisLen = lis(arr, i);
 			int ldsLen = lds(arr, i + 1, length);
-			valArray[i] = lisLen + ldsLen;
+			valArr[i] = lisLen + ldsLen;
 		}
 
 		// Find and return the maximum of the values stored in the above results array
-		int max = 0;
-		for (int i = 0; i < length; i++) {
-			if (valArray[i] > max) {
-				max = valArray[i];
-			}
-		}
+		int max = getMax(valArr, valArr.length);
 
 		return max;
 	}
