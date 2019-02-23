@@ -1,5 +1,5 @@
 /**
- * A Subsequence is Bitonic if it increased and then decreases.
+ * A Subsequence is Bitonic if it first increases and then decreases.
  * Following program shows a solution to find the length of 
  * longest Bitonic subsequence in an array of positive integers.
  * 
