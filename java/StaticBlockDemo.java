@@ -35,7 +35,6 @@ public class StaticBlockDemo {
 	
 	public static void main(String[] args) {
 		stats(10);
-
 	}
 
 }
