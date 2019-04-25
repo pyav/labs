@@ -14,7 +14,6 @@ public class NekoFindsGrapes {
 
 	private static int isOdd(int a) {
 		return a % 2;
-
 	}
 
 	private static int min(int a, int b) {
