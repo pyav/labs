@@ -1,5 +1,5 @@
 /**
- * Following program demonstrated bounded types concept in Generics.
+ * Following program demonstrated the bounded types concept in Generics.
  * 
  * Output
  * ------
