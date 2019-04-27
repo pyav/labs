@@ -64,5 +64,14 @@ public class Dimensions {
 					+ obj.coOrdinates[i].t);
 		}
 	}
+	
+	static void showTillThreeDimesions(CoOrdinates<? super FourD> obj) {
+		
+		System.out.println("Showing till three dimensions:");
+		
+		for (int i = 0; i < obj.coOrdinates.length; i++) {
+			System.out.println(obj.coOrdinates[i].x + ", " + obj.coOrdinates[i].y);
+		}
+	}
 
 }
