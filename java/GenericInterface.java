@@ -16,7 +16,6 @@ package javaPrograms;
 
 interface MinMax<T extends Comparable<T>> {
 	T getMin();
-
 	T getMax();
 }
 
