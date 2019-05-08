@@ -3,8 +3,8 @@
  * 
  * Output
  * ------
- * In the First class.
- * In the Second class.
+ * In FirstToPrint
+ * In SecondToPrint
  *
  * @author pyav
  */
@@ -16,16 +16,16 @@ import java.util.List;
 
 class FirstToPrint {
 
-	void printSomething() {
-		System.out.println("In the First class.");
+	void printClass() {
+		System.out.println("In " + this.getClass().getSimpleName());
 	}
 }
 
-class SecondtoPrint extends FirstToPrint {
+class SecondToPrint extends FirstToPrint {
 
 	@Override
-	void printSomething() {
-		System.out.println("In the Second class.");
+	void printClass() {
+		System.out.println("In " + this.getClass().getSimpleName());
 	}
 }
 
@@ -35,10 +35,10 @@ public class ListAddSubclass {
 
 		List<FirstToPrint> objList = new ArrayList<FirstToPrint>();
 		objList.add(new FirstToPrint());
-		objList.add(new SecondtoPrint());
+		objList.add(new SecondToPrint());
 
 		for (FirstToPrint obj : objList) {
-			obj.printSomething();
+			obj.printClass();
 		}
 	}
 
