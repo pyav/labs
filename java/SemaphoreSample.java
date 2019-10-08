@@ -18,7 +18,6 @@
  *
  * @author pyav
  */
-package javaPrograms;
 
 import java.util.concurrent.Semaphore;
 
