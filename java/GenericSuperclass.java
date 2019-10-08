@@ -9,8 +9,6 @@
  * @author pyav
  */
 
-package javaPrograms;
-
 class Gen1<T> {
 	
 	T ob;
