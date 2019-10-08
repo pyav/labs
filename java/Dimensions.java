@@ -5,8 +5,6 @@
  *  @author pyav
  */
 
-package javaPrograms;
-
 public class Dimensions {
 
 	class TwoD {
