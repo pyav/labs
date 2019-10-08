@@ -1,3 +1,4 @@
+
 /**
  * This program demonstrates the functionality of bounded wildcard.
  *
@@ -28,13 +29,7 @@
  * @author pyav
  */
 
-package javaPrograms;
-
-import javaPrograms.Dimensions.TwoD;
-import javaPrograms.Dimensions.ThreeD;
-import javaPrograms.Dimensions.FourD;
-
-class CoOrdinates<T extends TwoD> {
+class CoOrdinates<T extends Dimensions.TwoD> {
 	
 	T[] coOrdinates;
 	
@@ -47,25 +42,25 @@ public class BoundedWildcardDemo {
 
 	public static void main(String[] args) {
 		
-		TwoD[] twoDArr = {
+		Dimensions.TwoD[] twoDArr = {
 				  new Dimensions().new TwoD(1, 2),
 				  new Dimensions().new TwoD(3, 4)
 				 };
-		ThreeD[] threeDArr = {
+		Dimensions.ThreeD[] threeDArr = {
 				      new Dimensions().new ThreeD(-1, -2, -3),
 				      new Dimensions().new ThreeD(-4, -5, -6),
 				      new Dimensions().new ThreeD(-7, -8, -9)
 				     };
-		FourD[] fourDArr = {
+		Dimensions.FourD[] fourDArr = {
 				    new Dimensions().new FourD(11, 12, 13, 14),
 				    new Dimensions().new FourD(15, 16, 17, 18),
 				    new Dimensions().new FourD(9, 10, 11, 12),
 				    new Dimensions().new FourD(13, 14, 15, 16)
 				   };
 		
-		CoOrdinates<TwoD> twoD = new CoOrdinates<TwoD>(twoDArr);
-		CoOrdinates<ThreeD> threeD = new CoOrdinates<ThreeD>(threeDArr);
-		CoOrdinates<FourD> fourD = new CoOrdinates<FourD>(fourDArr);
+		CoOrdinates<Dimensions.TwoD> twoD = new CoOrdinates<Dimensions.TwoD>(twoDArr);
+		CoOrdinates<Dimensions.ThreeD> threeD = new CoOrdinates<Dimensions.ThreeD>(threeDArr);
+		CoOrdinates<Dimensions.FourD> fourD = new CoOrdinates<Dimensions.FourD>(fourDArr);
 		
 		Dimensions.showTwoDimensions(twoD);
 		Dimensions.showThreeDimensions(threeD);
