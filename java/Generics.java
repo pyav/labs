@@ -1,5 +1,3 @@
-package javaPrograms;
-
 /**
  * Following program is a simple example to show the functionality of Generics. 
  * 
