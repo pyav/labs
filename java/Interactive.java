@@ -6,12 +6,7 @@
  * 
  * Contents of the shell script
  * ----------------------------
- * read -p "Enter name: " name
- * echo "Welcome $name!"
- * 
- * read -p "Enter age: " age
- * echo "your age: $age!"
- * 
+ * Please check shell_scripting/test.sh file.
  * 
  * Output
  * ------
