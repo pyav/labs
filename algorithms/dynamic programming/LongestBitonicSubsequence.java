@@ -15,8 +15,6 @@
  * @author pyav
  */
 
-package algo;
-
 public class LongestBitonicSubsequence {
 
 	public static void main(String[] args) {
