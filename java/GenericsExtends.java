@@ -10,8 +10,6 @@
  * @author pyav
  */
 
-package javaPrograms;
-
 class GenArr<T extends Number> {
 	
 	T[] numbers;
