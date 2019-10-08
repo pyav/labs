@@ -1,0 +1,4 @@
+To revert local changes in a file:
+---------------------------------
+git checkout -- <file>
+
