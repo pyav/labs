@@ -1,5 +1,3 @@
-package javaPrograms;
-
 /**
  * Demonstration of 'static' block. 
  * 
