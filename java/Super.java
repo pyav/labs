@@ -14,24 +14,24 @@
  * 
  */
 
-class Box {
+class Box2 {
     private double length;
     private double width;
     private double depth;
 
-    Box(double l, double w, double d) {
+    Box2(double l, double w, double d) {
 	length = l;
 	width = w;
 	depth = d;
     }
 
-    Box() {
+    Box2() {
 	length = 0;
 	width = 0;
 	depth = 0;
     }
 
-    Box(Box obj) {
+    Box2(Box2 obj) {
 	length = obj.length;
 	width = obj.width;
 	depth = obj.depth;
@@ -42,7 +42,7 @@ class Box {
     }
 }
 
-class BoxWeight extends Box {
+class BoxWeight extends Box2 {
     double weight;
 
     BoxWeight(double l, double w, double d, double wt) {
