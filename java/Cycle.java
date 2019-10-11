@@ -5,6 +5,8 @@
  * ------
  * Cycle
  * Cycle2
+ *
+ * @author pyav
  */
 
 public class Cycle extends Machine {
