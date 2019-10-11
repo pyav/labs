@@ -1,3 +1,8 @@
+/**
+ * Program to provide the abstract method to Cycle.java.
+ *
+ * @author pyav
+ */
 
 public abstract class Machine {
 
