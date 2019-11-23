@@ -28,9 +28,7 @@ public class Hulk {
 		}
 
 		System.out.println(first + mid + last);
-
 		in.close();
-
 	}
 
 }
