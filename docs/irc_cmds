@@ -4,7 +4,6 @@ Some commands
 /msg NickServ VERIFY REGISTER <user_id> <hashed passwd>
 /msg NickServ identify <passwd>
 
-
 Some channels
 -------------
 /join ##algorithms,##crypto,##math,#python,#projectfermat,##java,#swagger,#yaml,##security,##linux,##computerscience,#docker,#docker-dev
