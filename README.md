@@ -14,6 +14,12 @@ Following command may be used to compile a **.java** file:
 
     javac <filename>
 
+Run a **Java** program:
+
+    /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/bin/java \
+    -Dfile.encoding=UTF-8 -classpath \
+    /Users/<user_id>/Desktop/labs/bin codeforces.<Class name>
+
 ## Execution 
 ### Execute c code 
 The above command for compiling a **.c** file generates object file with the
