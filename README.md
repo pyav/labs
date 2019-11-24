@@ -16,7 +16,7 @@ Following command may be used to compile a **.java** file:
 
 Run a **Java** program:
 
-    /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/bin/java \
+    /Library/Java/JavaVirtualMachines/<jdk_version>/Contents/Home/bin/java \
     -Dfile.encoding=UTF-8 -classpath \
     /Users/<user_id>/Desktop/labs/bin codeforces.<Class name>
 
