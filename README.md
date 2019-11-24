@@ -18,7 +18,7 @@ Run a **Java** program:
 
     /Library/Java/JavaVirtualMachines/<jdk_version>/Contents/Home/bin/java \
     -Dfile.encoding=UTF-8 -classpath \
-    /Users/<user_id>/Desktop/labs/bin codeforces.<Class name>
+    /Users/<user_id>/Desktop/labs/bin codeforces.<class_name>
 
 ## Execution 
 ### Execute c code 
