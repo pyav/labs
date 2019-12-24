@@ -76,7 +76,7 @@ abstract class AbstractFactory {
 	}
 }
 
-public class AbstractFactoryClient {
+public class AbstractFactoryClientFactoryMethod {
 
 	public static void main(String[] args) {
 		
