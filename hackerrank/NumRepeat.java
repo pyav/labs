@@ -1,3 +1,13 @@
+/**
+ * Following program repeatedly counts the number of numbers in a number.
+ * 
+ * Output
+ * ------
+ * 11111111
+ * 4
+ * 128111
+ */
+
 import java.util.Scanner;
 
 public class NumRepeat {
