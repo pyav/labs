@@ -1,0 +1,42 @@
+1. Using a doubly-linked queue for Least recently used data access:
+   ---------------------------------------------------------------
+
+   Keep the data in a doubly-linked list and as and when any of it's nodes gets
+   accessed, move that node at the end of the queue and make that node as the
+   end-node. Also, keep start-node.
+
+
+   |---------|        |---------|         |----------|
+   | Node1   |------->| Node2   |-------->| Node3    |
+   | Data1   |<-------| Data2   |<--------| Data3    |
+   |---------|        |---------|         |----------|  
+        ^                                      ^
+        |                                      |
+      START                                   END
+
+   Let's assume that Node2 gets accessed. Then the Queue will be as follows:
+
+ 
+   |---------|         |---------|         |----------|
+   | Node1   |-------->| Node3   |-------->| Node2    |
+   | Data1   |<--------| Data3   |<--------| Data2    |
+   |---------|         |---------|         |----------|  
+        ^                                      ^
+        |                                      |
+      START                                   END
+
+   Now the LRU node/data will be Node1 since it is at the START pointer.
+   If let's say, Node1 gets accessed and then Node2, the queue will be:
+
+
+   |---------|         |---------|         |----------|
+   | Node3   |-------->| Node1   |-------->| Node2    |
+   | Data3   |<--------| Data1   |<--------| Data2    |
+   |---------|         |---------|         |----------|  
+        ^                                      ^
+        |                                      |
+      START                                   END
+
+   The LRU node, here, will be Node3.
+  
+
