@@ -74,6 +74,21 @@ Classes   ---> ArrayList      HashSet         PriorityQueue       HashMap
                Stack          TreeSet         LinkedList(Deque)   HashTable
                Vector                                             TreeMap
 
+6. AbstractCollection:
+   ------------------
+   - It is used to implement an unmodifiable collection, for which one needs
+     to only extend this AbstractCollection Class and implement only the
+     iterator and the size methods.
+   - public abstract class AbstractCollection<E>
+        extends Object
+            implements Collection<E>
 
+     where E is the type of elements maintained
+     by this collection.
+   - protected AbstractCollection(): The default constructor, but being
+                                     protected, it doesn’t allow to create an
+                                     AbstractCollection object.
+   - Methods: add(), addAll(), clear(), contains(), containsAll(), isEmpty,
+     iterator(), size(), remove(), toArray(), toString(), etc.
 
 
