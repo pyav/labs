@@ -1,3 +1,7 @@
+Following is the notes from Algorithms part2 on Coursera by Princeton
+University. It was conducted by Prof. Robert Sedgewick and Kevin Wayne.
+
+
 Graph Representation:
 --------------------
 In practice: Use adjacency list representation.
