@@ -68,11 +68,40 @@ Connected Components:
             discovered as part of the same component.
           - Keep track of connected component number.
           - Connected component groups help process the data in linear time.
-  - 
+
+Graph Challenges:
+----------------
+  - Challenge 1: Is a graph bipartite?
+  - Challenge 2: Find a cycle.
+  - Challenge 3: Euler Tour: Is there a cycle that uses each edge exactly once?
+                 => A connected graph is Eulerian iff all the vertices have
+                    even degree.
+  - Challenge 4: Find a cycle that visits every vertex exactly once.
+                   - Sometimes called as Traveling sales person problem in graph.
+                 => Hamiltonian cycle problem (Classical NP-complete problem).
+                    - Intractable.
+  - Challenge 5: Are two graphs identical except for vertex names?
+                 => Graph Isomorphism Problem.
+                 - No body knows even how to classify this problem.
+  - Challenge 6: Layout a graph in a plane without crossing edges?
+                 => Linear time DFS based planarity algorithm. Discoverd by
+                    Tarjan in 1970s. (too complicated for most practioners).
 
 
+Directed Graph (or Digraph):
+---------------------------
+Some diagraph problems:
+----------------------
+  - Path: Is there a directed path from one point to another in a directed graph?
+  - Shorted Path: What is the shorted directed path from s to t?
+  - Topological sort: Can you draw a digraph so that all edges point upwards?
+  - Strong connectivity: Is there a directed path between all pairs of
+                         vertices?
+  - Transitive closure: For which vertices v and w is there a path from v to w?
+  - PageRank: What is the importance of a web page?
 
-
+Digraph API:
+-----------
 
 
 
