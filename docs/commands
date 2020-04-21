@@ -1,0 +1,8 @@
+1. rpm related commands:
+   --------------------
+   1.1 To list all the files in an rpm:
+       rpm -qlp <name of the rpm>
+
+   1.2 To extract the files in an rpm:
+       rpm2cpio <rpm name> | cpio -idmv
+
