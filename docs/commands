@@ -1,8 +1,15 @@
 1. rpm related commands:
    --------------------
    1.1 To list all the files in an rpm:
+       -------------------------------
        rpm -qlp <name of the rpm>
 
    1.2 To extract the files in an rpm:
+       ------------------------------
        rpm2cpio <rpm name> | cpio -idmv
 
+2. tar commands:
+   ------------
+   2.1 Command to create a tar which follows symlinks:
+       ----------------------------------------------
+       tar -cvhzf <tar_name>.tgz directory
