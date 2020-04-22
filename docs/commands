@@ -12,4 +12,4 @@
    ------------
    2.1 Command to create a tar which follows symlinks:
        ----------------------------------------------
-       tar -cvhzf <tar_name>.tgz directory
+       tar -cvhzf <tar_name>.tgz <directory_for_tar>
