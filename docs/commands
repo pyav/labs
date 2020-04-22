@@ -1,5 +1,5 @@
-1. rpm related commands:
-   --------------------
+1. rpm commands:
+   ------------
    1.1 To list all the files in an rpm:
        -------------------------------
        rpm -qlp <name of the rpm>
@@ -13,3 +13,21 @@
    2.1 Command to create a tar which follows symlinks:
        ----------------------------------------------
        tar -cvhzf <tar_name>.tgz <directory_for_tar>
+
+3.  irc commands:
+    ------------
+    /msg NickServ REGISTER <password> youremail@example.com
+    /msg NickServ VERIFY REGISTER <user_id> <hashed passwd>
+    /msg NickServ identify <passwd>
+
+4. irc channels:
+   ------------
+   /join ##algorithms,##crypto,##math,#python,#projectfermat,##java,#swagger,#yaml,##security,##linux,##computerscience,#docker,#docker-dev
+
+
+5. git commands:
+   ------------
+   5.1 To revert local changes in a file:
+       ---------------------------------
+       git checkout -- <file>
+
