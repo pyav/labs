@@ -1,0 +1,15 @@
+Few guidelines:
+--------------
+1. Try to avoid OO designs that violate the Dependency Inversion Principle.
+2. No variable should hold reference to a concrete class. If you use 'new',
+   you'll be holding reference to a concrete class. Use a factory to get around
+   that.
+3. No class should derive from a concrete class. If you do so, you'll depend on
+   the concrete class. Derive from an abstraction like an interface or an abstract
+   class.
+4. No method should override an implemented method of any of its base classes.
+   If you do so, your base class would be an abstraction to start with. Those
+   methods implemented in the base class are meant to  be shared by all your
+   subclasses.
+
+
