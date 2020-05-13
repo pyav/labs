@@ -12,4 +12,3 @@ Few guidelines:
    methods implemented in the base class are meant to  be shared by all your
    subclasses.
 
-
