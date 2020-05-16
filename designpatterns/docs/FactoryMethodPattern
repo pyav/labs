@@ -12,3 +12,9 @@ Few guidelines:
    methods implemented in the base class are meant to  be shared by all your
    subclasses.
 
+Dependency Inversion Principle:
+------------------------------
+  - Depend upon abstractions. Do not depend upon concrete classes.
+  - It is similar to, "Program to an interface, not an implementation".
+  - Both high-level and low-level should depend on abstractions.
+
