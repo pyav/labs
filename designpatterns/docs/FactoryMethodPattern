@@ -18,4 +18,8 @@ Dependency Inversion Principle:
   - It is similar to, "Program to an interface, not an implementation".
   - Both high-level and low-level components should depend on abstractions.
 
+Abstract Factory Pattern:
+------------------------
+  - Provides an interface for creating families of related or dependent objects
+    without specifying their concrete classes.
 
