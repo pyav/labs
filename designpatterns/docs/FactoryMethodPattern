@@ -23,3 +23,25 @@ Abstract Factory Pattern:
   - Provides an interface for creating families of related or dependent objects
     without specifying their concrete classes.
 
+Differences and similarities between Factory Method and Abstract Factory:
+------------------------------------------------------------------------
+  - Both are good at decoupling applications from specific implementations.
+  - Factory Method create objects through inheritance, Abstract Factory does it
+    through object composition.
+  - In Factory Method, you need to extend a class and provide an implementation
+    for a factory method. The whole point is that you're using a subclass to do
+    the creation for you. That way, the clients need to know the abstract type
+    they are using, the subclass worries about the concrete type.
+  - Abstract Factory provide an abstract type for creating a family of
+    products. It groups together a set of related products.
+
+Object Oriented Principles:
+--------------------------
+  - Encapsulate what varies.
+  - Favor composition over inheritance.
+  - Program to interfaces, not implementations.
+  - Strive for loosely coupled designs between objects that interact.
+  - Classes should be open for extension but closed for modification.
+  - Depend on abstractions. Do not depend on concrete classes.
+
+
