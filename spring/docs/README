@@ -6,7 +6,7 @@ Request body encoding:
 
 Request message  --> body ---> url encoded (small amounts, simple key-value pairs)
                           |
-                          |--> mutli part (Lots of data, files)
+                          |--> multi part (Lots of data, files)
 
 Http response anatomy:
 ---------------------
