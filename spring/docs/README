@@ -22,8 +22,6 @@ Http response anatomy:
 
 Http response code:
 ------------------
-           
-
        logic ---> 1xx - info
          |   |--> 2xx - success 
          |   |     |-> 200 - OK
@@ -38,4 +36,3 @@ Http response code:
        based
        on 
        code
-
