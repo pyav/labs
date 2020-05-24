@@ -39,4 +39,11 @@ Http response code:
 
 Cookies:
 -------
+  Server --> cookies --> response
+                         header
+                           |
+                           V
+                         Client stores
+                          and 
+                         sends to Server
 
