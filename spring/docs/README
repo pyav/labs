@@ -1,4 +1,4 @@
-Notes from Coursera:
+Notes from Coursera: (Dr. Jules White)
 ===================
 
 Request body encoding:
@@ -20,4 +20,5 @@ Http response anatomy:
   ------
     Content-type
     Body
+
 
