@@ -10,4 +10,14 @@ Request message  --> body ---> url encoded (small amounts, simple key-value pair
 
 Http response anatomy:
 ---------------------
+  Status line:
+  -----------
+  response   phrase
+    code      or
+             text
+
+  Header:
+  ------
+    Content-type
+    Body
 
