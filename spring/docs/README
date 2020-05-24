@@ -47,3 +47,16 @@ Cookies:
                           and 
                          sends to Server
 
+Http polling:
+------------
+  - Regular http client needs to poll server as http is a client-driven
+    protocol. This has some time fixed to it, which can be increased, say after
+    T seconds and then after 2T seconds and so on. 
+  - The client connection can be upgraded to Websockets in which the server can
+    send back the data to client. Problem with Websockets is that if the
+    connection is dropped, the client needs to reconnect and upgrade to
+    Websocket. This means some kind of logic needs to be with client to
+    understand and figure out when the connection went off and reconnect and
+    then upgrade to websocket.
+
+
