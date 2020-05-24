@@ -3,7 +3,6 @@ Notes from Coursera: (Dr. Jules White)
 
 Request body encoding:
 ---------------------
-
 Request message  --> body ---> url encoded (small amounts, simple key-value pairs)
                           |
                           |--> multi part (Lots of data, files)
