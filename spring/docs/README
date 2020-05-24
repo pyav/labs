@@ -22,5 +22,20 @@ Http response anatomy:
 
 Http response code:
 ------------------
+           
 
+       logic ---> 1xx - info
+         |   |--> 2xx - success 
+         |   |     |-> 200 - OK
+         |   |--> 3xx - redirection
+         |   |--> 4xx - client error
+         |   |     |-> 404 - resource not found
+         |   |--> 5xx - server error
+         |         |-> 500
+         V
+       handle
+       response
+       based
+       on 
+       code
 
