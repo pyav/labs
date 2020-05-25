@@ -63,4 +63,13 @@ Http polling:
     use constantly. For an http connection, the server can let go the
     connection if there is no data.
 
+Push messaging:
+--------------
+  client        server            GCM (Google Cloud Messaging)
+    |             |--------------->|
+    |<---msg, who subs?, <4Kb------|
+    |             |                |
+    |--poll------>|                |
+    |<------------|                |
+
 
