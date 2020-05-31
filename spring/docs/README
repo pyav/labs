@@ -77,4 +77,16 @@ Push messaging:
         +
      security
 
+Example Servlet: (video servlet)
+---------------
+            selection of servlet (web.xml)
+               |
+ Request    --------------------------
+ method     |  |  video servlet       |
+----------->|- V  -----------         |
+            ||--->| doPost()|         |
+            |     | doGet() |         |
+            |     |---------|         |
+            --------------------------
+
 
