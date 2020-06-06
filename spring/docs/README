@@ -92,4 +92,19 @@ Example Servlet: (video servlet)
                               V
                             Client
 
+Injection Attacks:
+-----------------
+  - Don't directly execute commands sent by clients.
+  - Don't blindly trust client's data. Segregate it and make sure it can't
+    manipulate the server in some way. Validate it.
+  - If the client's data has a potential to get executed, server must sanitize
+    it and strip out anything bad in it. Best approach is to allow only a
+    certain items.
+  - Always validate the type of data sent from client to be of the type it is
+    supposed to be, to be in the range it is supposed to be.
+  - Be very careful of the data that the server sends back to the client.
+  - Make sure that anything that comes to the server doesn't lead to any attack
+    on the server or the client visiting the server. Same goes for anything
+    that leaves the server.
+
 
