@@ -107,4 +107,11 @@ Injection Attacks:
     on the server or the client visiting the server. Same goes for anything
     that leaves the server.
 
+Dispatcher and controller abstraction:
+-------------------------------------
+  - register controller
+  - Xml or Java annotations
+  - routing of request
+  - dispatcher servlet - routing, data extraction, marshalling and validation.
+
 
