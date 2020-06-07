@@ -114,5 +114,9 @@ Dispatcher and controller abstraction:
   - routing of request
   - dispatcher servlet - routing, data extraction, marshalling and validation.
 
+Spring controllers:
+------------------
+  - @Controller for class.
+  - @RequestMapping("<path>") for method.
 
 
