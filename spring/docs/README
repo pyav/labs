@@ -119,5 +119,5 @@ Spring controllers:
   - @Controller for class.
   - @RequestMapping("<path>") for method.
   - @RequestParam("<key>")
-
+  - @PathVar("<key>")
 
