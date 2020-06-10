@@ -120,4 +120,9 @@ Spring controllers:
   - @RequestMapping("<path>") for method.
   - @RequestParam("<key>")
   - @PathVar("<key>")
+  - @RequestBody - whenever this annotation is seen, http message converter
+    takes care of constructing an object and mapping the request parameters to
+    the data members of that object type i.e. class.
+
+
 
