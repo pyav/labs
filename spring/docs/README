@@ -126,5 +126,6 @@ Spring controllers:
   - MultipartFile for data strems:
     -----------------------------
       - public String func(@RequestParam("file") MultipartFile file) {}
+  - @Bean - MultipartConfigElement
 
 
