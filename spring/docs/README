@@ -123,6 +123,8 @@ Spring controllers:
   - @RequestBody - whenever this annotation is seen, http message converter
     takes care of constructing an object and mapping the request parameters to
     the data members of that object type i.e. class.
-
+  - MultipartFile for data strems:
+    -----------------------------
+      - public String func(@RequestParam("file") MultipartFile file) {}
 
 
