@@ -127,5 +127,7 @@ Spring controllers:
     -----------------------------
       - public String func(@RequestParam("file") MultipartFile file) {}
   - @Bean - MultipartConfigElement
+  - @ResponseBody - Spring looks at the return type and makes it a part of the
+                    response body.
 
 
