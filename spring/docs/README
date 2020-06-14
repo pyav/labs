@@ -133,5 +133,5 @@ Spring controllers:
 Marshalling with Jackson Annotations:
 ------------------------------------
   - ObjectMapper - converts object to and from json.
-
+  - @JsonIgnore - to tell Jackson to ignore a property.
 
