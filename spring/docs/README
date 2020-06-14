@@ -130,4 +130,8 @@ Spring controllers:
   - @ResponseBody - Spring looks at the return type and makes it a part of the
                     response body.
 
+Marshalling with Jackson Annotations:
+------------------------------------
+  - ObjectMapper - converts object to and from json.
+
 
