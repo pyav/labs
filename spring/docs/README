@@ -135,3 +135,11 @@ Marshalling with Jackson Annotations:
   - ObjectMapper - converts object to and from json.
   - @JsonIgnore - to tell Jackson to ignore a property.
 
+Spring Boot:
+-----------
+  - setup web container
+  - discover our controllers
+  - setup dispatcher servlet
+  - connecting to dbs, etc.
+
+
