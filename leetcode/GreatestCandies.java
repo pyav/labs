@@ -1,3 +1,15 @@
+/**
+ * https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+ * 
+ * Outputs:
+ * -------
+ * true
+ * true
+ * true
+ * false
+ * true
+ */
+
 package leetcode;
 
 import java.util.ArrayList;
@@ -34,7 +46,7 @@ public class GreatestCandies {
 		List<Boolean> result = new ArrayList<Boolean>();
 		result = solution.kidsWithCandies(candies, 3);
 		for (int i = 0; i < result.size(); i++) {
-			System.out.printf("%s", result.get(i));
+			System.out.println(result.get(i));
 		}
 	}
 
