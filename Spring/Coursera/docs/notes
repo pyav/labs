@@ -142,4 +142,21 @@ Spring Boot:
   - setup dispatcher servlet
   - connecting to dbs, etc.
 
+Spring Controller:
+-----------------
+  - Web container has dispatcher servlets which are associated with
+    controllers.
+  - @Configuration - Tell Spring that this object represents a configuration
+                     for the application.
+  - @EnableWebMvc - Tell Spring to turn on web MVC(e.g. it should enable
+                    Dispatcher Servlet so that requests can be routed to our
+                    controller).
+  - @ComponentScan("org...controller") - Tell Spring to scan controller package
+                                         (and all sub-packages) to find any
+                                         controllers or other component part of
+                                         the Application - @Controller classes
+                                         are attached to the dispatcher servlet.
+  - EnableAutoConfiguration - Tell Spring to inject depenencies that are marked
+                              in our classes with @Autowired.
+  - SpringApplication.run(Application.class, args) - To launch the application.
 
