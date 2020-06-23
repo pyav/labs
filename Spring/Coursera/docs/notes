@@ -117,7 +117,7 @@ Dispatcher and controller abstraction:
 Spring controllers:
 ------------------
   - @Controller for class.
-  - @RequestMapping("<path>") for method.
+  - @RequestMapping(value="<path>", method=RequestMethod.<POST/GET>) for method.
   - @RequestParam("<key>")
   - @PathVar("<key>")
   - @RequestBody - whenever this annotation is seen, http message converter
