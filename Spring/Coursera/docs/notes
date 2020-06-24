@@ -169,4 +169,12 @@ Horizontal Scaling:
     have the state of the application. Hence, the thoughts should be towards
     designing stateless applications as much as we can.
 
+HTTP Load Balancing:
+-------------------
+ - One of the simple ways to load balance the incoming requests over a set of
+   servers is to do a round-robin request distribution. Challenge here would be
+   to sync required metadata (state) like login information across servers. So
+   when the request is routed to the next server, it will ask for login
+   credential again.
+
 
