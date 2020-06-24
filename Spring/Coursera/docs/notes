@@ -160,4 +160,13 @@ Spring Controller:
                               in our classes with @Autowired.
   - SpringApplication.run(Application.class, args) - To launch the application.
 
+Horizontal Scaling:
+------------------
+  - Adding servers to the application may not increase the power to process
+    requests per second in equal proportion of the servers. There could be
+    multiple reasons for this, one is the application being stateful. This
+    could also be with the servers. In this case the new server needs to first
+    have the state of the application. Hence, the thoughts should be towards
+    designing stateless applications as much as we can.
+
 
