@@ -181,5 +181,8 @@ HTTP Load Balancing:
    client's request to that server only. This is "Sticky session(s)".
  - We can also keep a state in a lower layer central db. Each server machine
    checks whether a particular client has logged in from that db.
+ - State can also be distributed across multiple machines either using
+   distributed in memory cache like memcached or database that is connected to
+   all the machines and you have a mechanism to distribute the state.
 
 
