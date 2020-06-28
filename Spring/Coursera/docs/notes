@@ -176,5 +176,10 @@ HTTP Load Balancing:
    to sync required metadata (state) like login information across servers. So
    when the request is routed to the next server, it will ask for login
    credential again.
+ - Stateful and stateless application. In stateful application, we do maintain
+   a state of the client talking to a a particular server and we route that
+   client's request to that server only. This is "Sticky session(s)".
+ - We can also keep a state in a lower layer central db. Each server machine
+   checks whether a particular client has logged in from that db.
 
 
