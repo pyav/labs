@@ -211,6 +211,9 @@ IaaS vs. PaaS:
   - With PaaS, you provide only the application and the PaaS automatically
     configures the web container, configures the underlying VM that it is
     running on, decides all of the security settings, decides when to scale it
-    up or down, how much capacity is needed and runs it for you.
+    up or down, how much capacity is needed and runs it for you. PaaS takes
+    away the complexity of you doing the monitoring, etc. job and provides you
+    the facility to focus only on the app. PaaS gives tools coupled to the
+    platform which does the tasks above.
 
 
