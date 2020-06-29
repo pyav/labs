@@ -214,6 +214,9 @@ IaaS vs. PaaS:
     up or down, how much capacity is needed and runs it for you. PaaS takes
     away the complexity of you doing the monitoring, etc. job and provides you
     the facility to focus only on the app. PaaS gives tools coupled to the
-    platform which does the tasks above.
+    platform which does the tasks above. The downside is that your application
+    will have to live within the limits of what the platform allows. So, you
+    don't get the flexibility to configure the system.
+
 
 
