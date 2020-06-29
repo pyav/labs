@@ -191,6 +191,11 @@ Auto-scaling:
     when depending on the current load and how much load we may forsee.
   - This intelligence mechanism can talk to the cloud provider to let it know
     when to upscale/downscale the machines handling the load.
-
+  - One more important point here is, if we don't have specific states
+    maintained on a specific machine, it will be easier for adding/removing the
+    machine by looking just at the load on the overall set of machines and
+    deciding whether to add/remove a machine. If we do have specific states
+    maintained on specific machines, we will have to think about how to sync
+    that state across machine(s) that are getting added.
 
 
