@@ -198,4 +198,19 @@ Auto-scaling:
     maintained on specific machines, we will have to think about how to sync
     that state across machine(s) that are getting added.
 
+IaaS vs. PaaS:
+-------------
+  - The upside of a VM based deployment (IaaS) is that we can customize the VM
+    based on our requirement, say, we can have controllers or db or any other
+    apps based on our requirement. But the downside is that we will also need
+    to have scripts to configure the entire system, monitor, handling load for
+    auto-scaling, etc. Hence, we are responsible for these things. IaaS gives
+    the bare metal to build the application on top of it. But we become
+    responsible for all the monitoring and management capabilities of dealing
+    with those machines. 
+  - With PaaS, you provide only the application and the PaaS automatically
+    configures the web container, configures the underlying VM that it is
+    running on, decides all of the security settings, decides when to scale it
+    up or down, how much capacity is needed and runs it for you.
+
 
