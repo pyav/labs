@@ -171,18 +171,26 @@ Horizontal Scaling:
 
 HTTP Load Balancing:
 -------------------
- - One of the simple ways to load balance the incoming requests over a set of
-   servers is to do a round-robin request distribution. Challenge here would be
-   to sync required metadata (state) like login information across servers. So
-   when the request is routed to the next server, it will ask for login
-   credential again.
- - Stateful and stateless application. In stateful application, we do maintain
-   a state of the client talking to a a particular server and we route that
-   client's request to that server only. This is "Sticky session(s)".
- - We can also keep a state in a lower layer central db. Each server machine
-   checks whether a particular client has logged in from that db.
- - State can also be distributed across multiple machines either using
-   distributed in memory cache like memcached or database that is connected to
-   all the machines and you have a mechanism to distribute the state.
+  - One of the simple ways to load balance the incoming requests over a set of
+    servers is to do a round-robin request distribution. Challenge here would be
+    to sync required metadata (state) like login information across servers. So
+    when the request is routed to the next server, it will ask for login
+    credential again.
+  - Stateful and stateless application. In stateful application, we do maintain
+    a state of the client talking to a a particular server and we route that
+    client's request to that server only. This is "Sticky session(s)".
+  - We can also keep a state in a lower layer central db. Each server machine
+    checks whether a particular client has logged in from that db.
+  - State can also be distributed across multiple machines either using
+    distributed in memory cache like memcached or database that is connected to
+    all the machines and you have a mechanism to distribute the state.
+
+Auto-scaling:
+------------
+  - We can have an intelligence to predict how much machines we will need and
+    when depending on the current load and how much load we may forsee.
+  - This intelligence mechanism can talk to the cloud provider to let it know
+    when to upscale/downscale the machines handling the load.
+
 
 
