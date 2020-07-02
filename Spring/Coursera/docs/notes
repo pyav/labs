@@ -233,4 +233,10 @@ Offloading to Cloud provider services:
   - Design with a view to offloading if you or your org can't manage
     everything.
 
+Dependency Injection:
+--------------------
+  - @AutoWired - Spring does the object assignment after seeing this
+    annotation.
+  - It is done by providing configuration objects to Spring.
+
 
