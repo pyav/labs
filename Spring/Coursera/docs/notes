@@ -230,7 +230,7 @@ Offloading to Cloud provider services:
     your own expertise in managing everything yourself is the scale of your
     application. This also includes architectural changes which could be
     difficult to implement.
-  - Design with a view to offloading if you can't manage everything yourself or
-    your org.
+  - Design with a view to offloading if you or your org can't manage
+    everything.
 
 
