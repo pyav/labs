@@ -218,4 +218,17 @@ IaaS vs. PaaS:
     will have to live within the limits of what the platform allows. So, you
     don't get the flexibility to configure the system.
 
+Offloading to Cloud provider services:
+-------------------------------------
+  - Benefits that provider have:
+    ---------------------------
+      - CDN(Content Delivery Network): Helps in distributing your app over
+        networks across the globe, cache it. 
+      - DB: Provide the infrastructure to manage the db.
+      - Cloud storage: could be helpful in, say, storing a video.
+  - One of the things that you should consider before choosing a provider vs.
+    your own expertise in managing everything yourself is the scale of your
+    application. This also includes architectural changes which could be
+    difficult to implement.
+
 
