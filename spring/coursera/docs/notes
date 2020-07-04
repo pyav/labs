@@ -250,5 +250,10 @@ Dependency Injection:
   - Advantage is to not pass the reference everytime we need it.
   - Code location:  https://github.com/pyav/labs/blob/master/spring/coursera/SampleAutoWiredExample.java
 
+Configuration annotations:
+-------------------------
+  - @ComponentScan({"com.mobile"}) - Spring looks for the annotations within
+    com.mobile for the implementation. You should have one implementation
+    within com/mobile.
 
 
