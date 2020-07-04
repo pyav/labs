@@ -238,5 +238,8 @@ Dependency Injection:
   - @AutoWired - Spring does the object assignment after seeing this
     annotation.
   - It is done by providing configuration objects to Spring.
+  - @Configuration on the class which provides the configuration.
+  - @Bean on the method which returns the required object. Data member in the
+    @AutoWired methods gets assigned with the returned object in @Bean.
 
 
