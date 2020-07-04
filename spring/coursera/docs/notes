@@ -241,5 +241,13 @@ Dependency Injection:
   - @Configuration on the class which provides the configuration.
   - @Bean on the method which returns the required object. Data member in the
     @AutoWired methods gets assigned with the returned object in @Bean.
+  - Default behavior is to update the reference of same object at all the
+    places where @AutoWired is used for the same return type. This default
+    behavior can be changed and Spring will call to @Bean everytime it sees
+    @AutoWired for the same return type.
+  - Spring looks at @AutoWired, then at @Configuration, then at @Bean and then
+    at the return type.
+  - Advantage is to not pass the reference everytime we need it.
+
 
 
