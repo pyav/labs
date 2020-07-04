@@ -254,6 +254,8 @@ Configuration annotations:
 -------------------------
   - @ComponentScan({"com.mobile"}) - Spring looks for the annotations within
     com.mobile for the implementation. You should have one implementation
-    within com/mobile.
+    within com/mobile. It takes a while if you have lots of packages inside
+    com.mobile to scan, but it is only during the application startup.
+  - @EnableAutoConfiguration - go look for @AutoWired
 
 
