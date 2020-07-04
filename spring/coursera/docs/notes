@@ -248,6 +248,7 @@ Dependency Injection:
   - Spring looks at @AutoWired, then at @Configuration, then at @Bean and then
     at the return type.
   - Advantage is to not pass the reference everytime we need it.
+  - Code location:  https://github.com/pyav/labs/blob/master/spring/coursera/SampleAutoWiredExample.java
 
 
 
