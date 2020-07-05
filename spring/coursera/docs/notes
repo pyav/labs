@@ -258,4 +258,9 @@ Configuration annotations:
     com.mobile to scan, but it is only during the application startup.
   - @EnableAutoConfiguration - go look for @AutoWired
 
+Object Relational Mapping:
+-------------------------
+  - Object conversion to database table and back.
+
+
 
