@@ -262,5 +262,11 @@ Object Relational Mapping:
 -------------------------
   - Object conversion to database table and back.
 
+JPA:
+---
+  - @Entity - To store the class in the db.
+  - @Id - For unique id.
+  - @GeneratedValue(strategy = GenerationType.AUTO) - JPA will auto-generate a
+    value and assign it to the data member where this annotation is used.
 
 
