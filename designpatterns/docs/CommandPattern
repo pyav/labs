@@ -20,3 +20,6 @@ Codewise,
         cook.makeBurger();
     }
 
+Notice that the waitress and the cook are decoupled. The waitress just calls a
+method on each order to get it prepared. The cook gets his instructions from
+the order slip, he never needs to directly communicate with the waitess.
