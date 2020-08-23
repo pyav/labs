@@ -1,0 +1,19 @@
+An analogy of command pattern could be made with a waitress who takes the order
+slip and gives it to the cook and notifies him/her of the order. The order slip
+can be viewed as an object which has orderUp() method which has calls to the
+methods of cook object based on the orders, for example, cook.makePizza(), etc.
+The waitress doesn't need to know what is there in the order. Hence she could,
+herself, be an object which has takeOrder() method which takes the orders from
+different customers and calls orderUp() method of the order slip objects as she
+knows that all the orders have orderUp() method.  This is all she needs to
+know.
+
+Codewise,
+
+    order slip:
+    ----------
+    public void orderUp() {
+        cook.makePizza();
+        cook.makeBurger();
+    }
+
