@@ -8,6 +8,8 @@
  * absCol = [].
  */
 
+package collections;
+
 import java.util.AbstractCollection;
 import java.util.TreeSet;
 
