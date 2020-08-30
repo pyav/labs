@@ -76,19 +76,42 @@ Classes   ---> ArrayList      HashSet         PriorityQueue       HashMap
 
 6. AbstractCollection:
    ------------------
-   - It is used to implement an unmodifiable collection, for which one needs
-     to only extend this AbstractCollection Class and implement only the
-     iterator and the size methods.
-   - public abstract class AbstractCollection<E>
-        extends Object
-            implements Collection<E>
+     - It is used to implement an unmodifiable collection, for which one needs
+       to only extend this AbstractCollection Class and implement only the
+       iterator and the size methods.
+     - public abstract class AbstractCollection<E>
+          extends Object
+              implements Collection<E>
+  
+       where E is the type of elements maintained
+       by this collection.
+     - protected AbstractCollection(): The default constructor, but being
+                                       protected, it doesn’t allow to create an
+                                       AbstractCollection object.
+     - Methods: add(), addAll(), clear(), contains(), containsAll(), isEmpty,
+       iterator(), size(), remove(), toArray(), toString(), etc.
 
-     where E is the type of elements maintained
-     by this collection.
-   - protected AbstractCollection(): The default constructor, but being
-                                     protected, it doesn’t allow to create an
-                                     AbstractCollection object.
-   - Methods: add(), addAll(), clear(), contains(), containsAll(), isEmpty,
-     iterator(), size(), remove(), toArray(), toString(), etc.
+7. The Collection Interface:
+   ------------------------
+
+8. CopyOnWriteArrayList and Collections.synchronizedList():
+   -------------------------------------------------------
+     - Locking of thread:
+       -----------------
+       Synchronized List locks the whole list to provide synchroniztion and
+       thread-safety during the read and write operations, whereas
+       CopyOnWriteArrayList() doen't lock the whole list during these
+       operations.  In CopyOnWriteArrayList, every write operation (add, set,
+       remove, etc.) makes a new copy of the elements in the list and for the
+       read operations (get, iterator, listIterator, etc.), it works on a
+       different copy. So there is no additional overhead during a read
+       operation and its read operation is faster than
+       Collections.synchronizedList(). Thus, COWAL is better for read operation
+       than synchronized list.
+     - Write operations:
+       ----------------
+
+
+
 
 
