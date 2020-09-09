@@ -2,8 +2,8 @@
  * https://leetcode.com/problems/symmetric-tree/
  * 
  * 
- * Sample example:
- * --------------
+ * Output:
+ * ------
  * 1
  * 2
  * 3
