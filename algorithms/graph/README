@@ -107,5 +107,46 @@ Some diagraph problems:
 Digraph API:
 -----------
 
+Digraph Search:
+--------------
+  - Use of depth-first search in Digraphs:
+      - source code analysis to find dead code.
+      - Find and remove unreachable code.
+      - Automatic garbage collection.
+      - Mark-sweep algorithm [McCarthy, 1960]
+          - Mark: mark all reachable objects.
+          - Sweep: if object is unmarked, it is garbage (so add to the free list).
+      - Memory cost: Uses 1 extra mark bit per object (plus DFS stack).
+  - DFS enables direct solution of simple digraph problems.
+      - Reachability.
+      - Path finding.
+      - Topological sort.
+      - Directed cycle detection.
+  - Basis for solving difficult digraph problems.
+      - 2-satisfiability.
+      - Directed Euler path.
+      - Strongly-connected components.
+      - Paper:
+        -----
+          - DEPTH-FIRST SEARCH AND LINEAR GRAPH ALGORITHMS - Robert Tarjan
+  - Proposition:
+    -----------
+    BFS computes shortest paths (fewest number of edges) from s to
+    all other vertices in a digraph in time proportional to E+V.
+  - For multi-source shorted paths, user BFS, but initialize by enqueuing all
+    source vertices.
+  - Example: 
+    -------
+      - All the pages that you can crawl starting from a given webpage.
+          - Make a queue and add the link that the first one points to into
+            that queue. 
+          - One reason not to use a DFS here is that some websites trap such
+            query and keep creating further links and you may fall into the
+            trap of going to it's depth and not having related links at once as
+            in BFS.
+
+Topological Sort:
+----------------
+
 
 
