@@ -166,4 +166,7 @@ Topological sort:
       - class A ineherits B, B inherits C, C inherits A.
   - Cyclic calculation in Ms spreadsheet - ERROR.
 
+Strong-components:
+-----------------
+
 
