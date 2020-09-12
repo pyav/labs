@@ -1,6 +1,9 @@
-Following is the notes from Algorithms part2 on Coursera by Princeton
+Following is the notes from Algorithms-part2 on Coursera by Princeton
 University. It was conducted by Prof. Robert Sedgewick and Kevin Wayne.
 
+Link to the course:
+------------------
+  - https://www.coursera.org/learn/algorithms-part2
 
 Graph Representation:
 --------------------
@@ -149,5 +152,18 @@ Topological sort:
 ----------------
   - Run depth-first search.
   - Return vertices in reverse postorder.
+  - Proposition:
+    -----------
+    A digraph has a topological order iff no directed cycle.
+    - Goal: Give a directed graph, find a directed cycle.
+        - Solution: DFS. 
+  - Scheduling:
+    ----------
+      - Given a set of tasks to be completed with precedence constraints, in
+        what order should we schedule the tasks?
+      - A directed cycle implies the scheduling problem is infeasible.
+  - Directed cycle detection application: cyclic inheritance.
+      - class A ineherits B, B inherits C, C inherits A.
+  - Cyclic calculation in Ms spreadsheet - ERROR.
 
 
