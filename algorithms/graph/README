@@ -168,5 +168,28 @@ Topological sort:
 
 Strong-components:
 -----------------
+  - Strong components algorithms: brief history
+    ----------------------------
+      - 1960s: Core OR problem.
+          - Widely studied; some practical algorithms.
+          - complexity not understood.
+      - 1972: linear-time DFS algorithm (Tarjan)
+          - Classic algorithm
+          - Level of difficulty: Algs4++
+          - Demonstrated broad applicability and importance of DFS.
+      - 1980s: easy two-pass linear-time algorithm (Kosaraju-Sharir).
+          - forgot notes for lecture; developed algorithm in order to teach it!
+          - LAter found in Russian scientific literature (1972).
+      - 1990s: more easy linear-time algorithms.
+          - Gabow: fixed old OR algorithm.
+          - Cheriyan-Mehlhorn: needed one-pass algorithm for LEDA.
 
+  - Kosaraju-Sharir algorithm:
+    -------------------------
+      - simple bug mysterious algorithm for computing strong components.
+          - Phase 1: run DFS on G^R to compute reverse postorder.
+          - Phase 2: run DFS on G, considering vertices in order given by first DFS.
+      - computes the strong components of a digraph in time proportional to
+        E+V.
+      - 
 
