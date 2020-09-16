@@ -191,5 +191,11 @@ Strong-components:
           - Phase 2: run DFS on G, considering vertices in order given by first DFS.
       - computes the strong components of a digraph in time proportional to
         E+V.
-      - 
+      - Running time: bottleneck is running DFS twice and computing G^R.
+
+Digraph-processing summary: algorithms of the day
+--------------------------
+  - single-source reachability - DFS
+  - topologival sort in a DAG - DFS
+  - strong component in a digraph - Kosaraju DFS (twice)
 
