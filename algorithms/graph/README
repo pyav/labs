@@ -203,5 +203,17 @@ Minimum Spanning Tree:
 ---------------------
   - Greedy Algorithm:
     ----------------
-      - 
+      - Start with all edges colored grey.
+      - Find cut with no black crossing edges; color its min-weight edge black.
+      - Repeat until V-1 edges are colored black.
+  - The Greedy algorithm computes the MST.
+  - Efficient implementations:
+      - Kruskal's algorithm
+      - Prim's algorithm
+      - Boruvka's algorithm
+  - What happen's if edge weights are not all distinct?
+    => Greedy MST algorithm still correct if equal weights are present!
+  - What if Graph is not connected?
+    => Compute minimum spanning forest = MST of each component.
+
 
