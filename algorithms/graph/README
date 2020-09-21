@@ -199,3 +199,9 @@ Digraph-processing summary: algorithms of the day
   - topologival sort in a DAG - DFS
   - strong component in a digraph - Kosaraju DFS (twice)
 
+Minimum Spanning Tree:
+---------------------
+  - Greedy Algorithm:
+    ----------------
+      - 
+
