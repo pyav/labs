@@ -216,4 +216,18 @@ Minimum Spanning Tree:
   - What if Graph is not connected?
     => Compute minimum spanning forest = MST of each component.
 
+Edge-weighted graph API:
+-----------------------
+  - Edge abstraction needed for weighted edge:
+    -----------------------------------------
+      - public class Edge implements Comparable<Edge>
+        ---------------------------------------------
+          - Edge(int v, int w, double weight)  - create a weighted edge v-w
+          - int either()  - either endpoint
+          - int other(int v)  - the endpoint that's not v
+          - int compareTo(Edge that)  - compare this edge to that edge
+          - double weight()  - the weight
+          - String toString()  - string representation
+      - Idiom for processing an edge e: int v = e.either(), w = e.other(v);
+
 
