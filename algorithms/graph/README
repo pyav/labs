@@ -230,4 +230,18 @@ Edge-weighted graph API:
           - String toString()  - string representation
       - Idiom for processing an edge e: int v = e.either(), w = e.other(v);
 
+  - public class EdgeWeightedGraph:
+    ------------------------------
+      - EdgeWeightedGraph(int V)    - create and empty graph with V vertices
+      - EdgeWeightedGraph(In in)    - create a graph from input stream
+      - void addEdge(Edge e)        - add weighted edge e to this graph
+      - Iterable<Edge> adj(int v)   - edges incident to v
+      - Iterable<Edge> edges()      - all edges in this graph
+      - int V()                     - number of vertices
+      - int E()                     - number of edges
+      - String toString()           - string representation
+
+    - allow self-loops and parallel edges.
+
+
 
