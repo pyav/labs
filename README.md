@@ -20,6 +20,9 @@ Run a **Java** program:
     -Dfile.encoding=UTF-8 -classpath \
     /Users/<user_id>/Desktop/labs/bin codeforces.<class_name>
 
+Run with verbose:
+    java -verbose <path to class name>
+
 ## Execution 
 ### Execute c code 
 The above command for compiling a **.c** file generates object file with the
