@@ -247,6 +247,8 @@ Kruskal's algorithm:
 -------------------
   - Consider edges in ascending order of weight.
   - Add next edge to the tree T unless doing so would create a cycle.
+  - Kruskal's algorithm builds the MST one edge at a time.
+  - It finds an edge that connects two trees in a forest of growing trees.
 
 
 
