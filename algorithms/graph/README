@@ -249,6 +249,10 @@ Kruskal's algorithm:
   - Add next edge to the tree T unless doing so would create a cycle.
   - Kruskal's algorithm builds the MST one edge at a time.
   - It finds an edge that connects two trees in a forest of growing trees.
+  - Kruskal’s algorithm uses space proportional to E and time proportional to E
+    log E (in the worst case) to compute the MST of an edge- weighted connected
+    graph with E edges and V vertices.
+
 
 
 
