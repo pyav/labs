@@ -253,6 +253,15 @@ Kruskal's algorithm:
     log E (in the worst case) to compute the MST of an edge- weighted connected
     graph with E edges and V vertices.
 
+Prim's Algorithm:
+----------------
+  - Start with one vertex and greedily grow the tree.
+  - add minimum weighted edge with exactly one endpoint in the tree.
+  - Repeat until V-1 edges.
+  - Adds the shortest edge that connects a non-tree vertex to the tree vertex.
+  - How to find exactly one endpoint in the tree?
+      - Lazy implementation: priority queue of weights of the edges that have
+        at least one endpoint in the tree.
 
 
 
