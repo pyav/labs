@@ -1,3 +1,11 @@
+/**
+ * Link: https://leetcode.com/problems/two-sum/
+ * 
+ * Output:
+ * ------
+ * 0 1
+ */
+
 package leetcode;
 
 public class TwoSum{
