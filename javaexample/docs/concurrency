@@ -1,0 +1,19 @@
+Concurrent API Packages
+-----------------------
+java.util.concurrent
+
+1. Synchronizers - Semaphore, CountDownLatch, CyclicBarrier, Exchanger, Phaser.
+2. Executors
+3. Concurrent collections
+4. Fork/ Join Framework
+
+Semaphore
+---------
+    - java.util.concurrent.Semaphore
+    - Semaphore sem = new Semaphore(1);
+    - sem.acquire()
+    - sem.release()
+
+CountDownLatch
+--------------
+

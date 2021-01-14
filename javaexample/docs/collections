@@ -1,0 +1,114 @@
+1. Why collections framework was needed?
+=> To implement a standard access interface for data members. Also, most of the
+   methods are final, meaning we cannot extend the 'Vector' class to implement a
+   similar kind of Collection
+
+2. Advantages of Collection Framework:
+=> 1. Consistent API: A basic set of interfaces like Set, Collection, List, Map
+      are present. The classes like ArrayList, LinkedList, Vector, etc. implement
+      these interfaces and have some common set of methods.
+   2. Reduces coding effort: You don't have to worry about the design of
+      Collection and you can focus on the best use in a program.
+   3. Increases program speed and quality: High performance implementations of
+      useful data structures and algorithms are provided which increased the
+      performance of the code.
+
+3. Core interfaces in Collection.
+=>
+                Collection
+               /   |   \  \                     Map
+              /    |    \  \_____                |
+             /    List   \       \               |
+           Set            \       \          SortedMap
+           /            Queue      \
+          /                         \
+      SortedSet                 Dequeue
+
+
+4. Collection: Root interface with basic methods like add(), remove(),
+               addAll(), isEmpty(), contains(), etc.
+
+Set : Doesn't allow duplicates. Example implementations of Set
+      interface are HashSet (Hashing based) and TreeSet (balanced
+      BST based). Note that TreeSet implements SortedSet.
+
+List : Can contain duplicates and elements are ordered. Example
+       implementations are LinkedList (linked list based) and
+       ArrayList (dynamic array based)
+
+Queue : Typically order elements in FIFO order except exceptions
+        like PriorityQueue.
+
+Deque : Elements can be inserted and removed at both ends. Allows
+        both LIFO and FIFO.
+
+Map : Contains Key value pairs. Doesn't allow duplicates.  Example
+      implementation are HashMap and TreeMap.
+      TreeMap implements SortedMap.
+
+The difference between Set and Map interface is that in Set we
+have only keys, whereas in Map, we have key, value pairs.
+
+
+5. Diagrammatic representation:
+   ---------------------------
+                                           iterator()
+                             Iterable<E> -------------> Iterator<E>
+                                ^
+                                |
+                            Collection<E>
+                                ^
+                ----------------|----------------
+                |               |               |
+Interfaces -> List<E>         Set<E>          Queue<E>          Map<K, V>
+                                ^               ^                ^
+                                |               |                |
+                            SortedSet<E>     Deque<E>        SortedMap<K, V>
+                                ^                                ^
+                                |                                |
+                           NavigableSet<E>                  NavigableMap<K, V>
+
+Implementation
+Classes   ---> ArrayList      HashSet         PriorityQueue       HashMap
+               LinkedList     LinkedHashSet   ArrayDeqeue         HashLinkedMAp
+               Stack          TreeSet         LinkedList(Deque)   HashTable
+               Vector                                             TreeMap
+
+6. AbstractCollection:
+   ------------------
+     - It is used to implement an unmodifiable collection, for which one needs
+       to only extend this AbstractCollection Class and implement only the
+       iterator and the size methods.
+     - public abstract class AbstractCollection<E>
+          extends Object
+              implements Collection<E>
+  
+       where E is the type of elements maintained
+       by this collection.
+     - protected AbstractCollection(): The default constructor, but being
+                                       protected, it doesn’t allow to create an
+                                       AbstractCollection object.
+     - Methods: add(), addAll(), clear(), contains(), containsAll(), isEmpty,
+       iterator(), size(), remove(), toArray(), toString(), etc.
+
+7. The Collection Interface:
+   ------------------------
+
+8. CopyOnWriteArrayList and Collections.synchronizedList():
+   -------------------------------------------------------
+     - Locking of thread:
+       -----------------
+       Synchronized List locks the whole list to provide synchroniztion and
+       thread-safety during the read and write operations, whereas
+       CopyOnWriteArrayList() doen't lock the whole list during these
+       operations.  In CopyOnWriteArrayList, every write operation (add, set,
+       remove, etc.) makes a new copy of the elements in the list and for the
+       read operations (get, iterator, listIterator, etc.), it works on a
+       different copy. So there is no additional overhead during a read
+       operation and its read operation is faster than
+       Collections.synchronizedList(). Thus, COWAL is better for read operation
+       than synchronized list.
+     - Write operations:
+       ----------------
+
+
