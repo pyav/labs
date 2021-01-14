@@ -1,4 +1,0 @@
-pyav=leafplay
-path=/home/anand/pyav/abc
-pattern=/abc_xyz/0101010/
-Anand=Verma
