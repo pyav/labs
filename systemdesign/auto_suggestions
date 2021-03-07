@@ -1,0 +1,62 @@
+Auto Suggestions:
+----------------
+  1. Response Time
+  2. Relevant/Contextual
+  3. Number of results/ Sorted results
+
+What data-structures and algorithms to use?
+=> Trie data-structures.
+     - Because it give O(L) time-complexity.
+     - Space optimized.
+
+- Ranking is given to a user-searched keyword based on how many times it is
+  being searched. 
+
+- Trie data structure - Assign a score to every word.
+    - Construct a tree with nodes having the prefixes of the words having some
+      rank. 
+    - Example:
+        - Dog - 9,
+        - Doll - 11,
+        - Dont - 21,
+        - Dart - 1
+        - Dip - 5
+    - so the nodes of the tree would have the words with the ranks as above.
+
+- Pre-compute the top 'K' (say, 3) suggestions for each of the nodes and store
+  in some cache or db.
+- Then create a prefix hash table for each of the prefixes with the
+  auto-suggestions.
+- If a user types a prefix, fetch the auto-suggestions from the precon
+
+
+System Design for auto-suggestion:      
+---------------------------------       Multi-node       Multiple nodes
+                                        db cluster       of Redis (Distributed)
+                 |-------------|         |-------|       |-------|
+         |--|--->|API Server 1 |-------->| DB    | or,   |Redis  |
+User --> |LB|    |-------------|<--------|-------|       |Cache  |
+         |--|--                          Cassandra/      |-------|
+              |  |-------------|         NoSQL           Redis/Memcache (Based on load)
+              |->|API Server 2 |
+                 |-------------|
+
+How to include contextual results/realtime results:
+--------------------------------------------------
+  - User based search suggestion.
+      - Maintain a table where all the history of user-search is saved.
+  - Incorporate trending search keys.
+      - Stream processing engine which process top-trending keywords.
+      - We can have them in a table for a day or for a recent period.
+      - Say, 1000/keywords 
+  - Hence, 
+
+    User ----> Prefix 
+                |
+                V
+              1. All results from prefix hash table.
+              2. User specific search results.
+              3. Trending suggestion result.
+
+
+
