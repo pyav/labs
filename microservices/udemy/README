@@ -1,0 +1,6 @@
+3 keys for web service:
+----------------------
+  - Designed for machine to machine (or application to application) interaction.
+  - Should be interoperable (not platform dependent).
+  - Should allow communication over a network.
+
