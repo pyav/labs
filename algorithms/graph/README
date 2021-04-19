@@ -263,5 +263,14 @@ Prim's Algorithm:
       - Lazy implementation: priority queue of weights of the edges that have
         at least one endpoint in the tree.
 
-
+Prim's algorithm (eager):
+------------------------
+  - Start with vertex 0 and greedily grow tree T.
+  - Add to T the min weight edge with exactly one endpoint in T.
+  - Repeat until V-1 edges.
+  
+Note: In eager implementation, the priority queue gets updated
+      with the new weight of the edge if a shorter weight edge
+      to reach to add a vertex to the tree is found and
+      previous on is removed.
 
