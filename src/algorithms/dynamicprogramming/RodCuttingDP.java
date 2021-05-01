@@ -1,3 +1,5 @@
+package algorithms.dynamicprogramming;
+
 /**
  * Following program demonstrates a solution of rod cutting problem using
  * Dynamic Programming concepts.
