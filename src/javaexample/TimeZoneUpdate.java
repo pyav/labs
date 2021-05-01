@@ -1,4 +1,4 @@
-package random;
+package javaexample;
 
 import java.util.Calendar;
 import java.util.TimeZone;
