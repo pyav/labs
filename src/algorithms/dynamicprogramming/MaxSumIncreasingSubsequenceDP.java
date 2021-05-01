@@ -1,3 +1,5 @@
+package algorithms.dynamicprogramming;
+
 /**
  * Following program finds out the maximum sum of increasing subsequence of integers.  
  * 
