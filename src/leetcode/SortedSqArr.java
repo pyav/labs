@@ -6,7 +6,7 @@
  * 0 1 1 4 4
  */
 
-package misc;
+package leetcode;
 
 public class SortedSqArr {
 
