@@ -37,4 +37,5 @@
 
    5.3. user/password cache:
         -------------------
+          git config credential.helper store
 
