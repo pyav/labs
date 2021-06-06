@@ -34,3 +34,7 @@
    5.2. Diff after "git add":
         --------------------
           git diff --cached
+
+   5.3. user/password cache:
+        -------------------
+
