@@ -15,12 +15,12 @@ public class SetAclExample {
 
 	public static void main(String[] args) {
 
-		String file = "/Users/aanverma/Desktop/labs/java/setfacl_java.txt";// initial perm: 644, aanverma:staff
+		String file = "/Users/pyav/Desktop/labs/java/setfacl_java.txt";// initial perm: 644, pyav:staff
 		Path path = Paths.get(file);
 
 		UserPrincipal userPrincipal = null;
 		try {
-			userPrincipal = FileSystems.getDefault().getUserPrincipalLookupService().lookupPrincipalByName("aanverma");
+			userPrincipal = FileSystems.getDefault().getUserPrincipalLookupService().lookupPrincipalByName("pyav");
 			AclEntry aclEntry = AclEntry.newBuilder().setPermissions(AclEntryPermission.EXECUTE)
 					.setType(AclEntryType.ALLOW).setPrincipal(userPrincipal).build();
 
