@@ -2,10 +2,8 @@
  * Following program demonstrates Min Heap functionalities with an array 
  * representation. 
  * 
- * 
  * Output
  * ------
- * 
  * Heap Array:
  * 2 3 0 0 0 0 0 0 0 0 0 
  *
@@ -30,9 +28,7 @@
  * Heap Size = 4
  * 
  *
- * 
  * @author pyav
- * 
  */
 
 public class MinHeap {
