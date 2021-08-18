@@ -46,3 +46,10 @@
           git config --global --unset user.email
           git config --global -l
 
+   5.5. global config set:
+        -----------------
+          git config --global user.name "Anand Verma"
+          git config --global user.email verma.anand09@gmail.com
+          git commit --amend --reset-author
+
+
