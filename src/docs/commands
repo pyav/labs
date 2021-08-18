@@ -39,3 +39,10 @@
         -------------------
           git config credential.helper store
 
+   5.4. config list and unset:
+        ---------------------
+          git config --unset user.email
+          git config -l
+          git config --global --unset user.email
+          git config --global -l
+
