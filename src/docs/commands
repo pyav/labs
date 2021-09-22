@@ -52,4 +52,19 @@
           git config --global user.email verma.anand09@gmail.com
           git commit --amend --reset-author
 
+   5.6. reset command:
+        -------------
+          git reset --hard
+
+6. Useful links:
+   ------------
+   6.1. https://imagekit.io/blog/http2-vs-http1-performance/
+   6.2. https://cloud.google.com/blog/products/api-management/understanding-grpc-openapi-and-rest-and-when-to-use-them
+
+
+7. brew install command:
+   --------------------
+   7.1. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   7.2. brew install protobuf
+
 
