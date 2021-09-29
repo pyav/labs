@@ -72,3 +72,8 @@ Following command can be executed to run a Go file:
     
     go run hello.go
 
+### Build a Go code
+Following command can be executed to build the binary from a Go file:  
+
+    go build hello.go
+
