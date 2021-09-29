@@ -67,3 +67,8 @@ Run the following command(s):
     python -tt <filename>
     python -m tabnanny -v .
 
+### Run a GoLang code
+Following command can be executed to run a Go file:  
+    
+    go run hello.go
+
