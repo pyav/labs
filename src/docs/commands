@@ -56,6 +56,10 @@
         -------------
           git reset --hard
 
+   5.7. git log:
+        -------
+          git log -L<line_number_1>,<line_number_2>:<file_path>
+
 6. Useful links:
    ------------
    6.1. https://imagekit.io/blog/http2-vs-http1-performance/
