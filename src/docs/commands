@@ -71,4 +71,11 @@
    7.1. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    7.2. brew install protobuf
 
+8. vim commands:
+   ------------
+   8.1. search a word between a range of line numbers:
+        ---------------------------------------------
+        /\%>930l\%<1136l"id"
+
+
 

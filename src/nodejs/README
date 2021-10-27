@@ -1,3 +1,6 @@
 ## Command to install express:
 npm install express
 
+## Create a package.json file in a directory
+npm init
+
