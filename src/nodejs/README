@@ -1,6 +1,16 @@
-## Command to install express:
+## Command to install different software components:
 npm install express
+npm install mongodb
+npm install mongoose
+
+npm install nodemon --save-dev -g
+or,
+sudo npm install nodemon  -g
+
 
 ## Create a package.json file in a directory
 npm init
+
+## nodemon commands
+nodemon run start
 
