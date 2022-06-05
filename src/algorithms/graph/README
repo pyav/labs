@@ -274,4 +274,7 @@ Note: In eager implementation, the priority queue gets updated
       to reach to add a vertex to the tree is found and
       previous on is removed.
 
-
+Dijkstra's algorithm:
+--------------------
+  - Consider vertices in increasing order of distance from s (non-tree vertex with the lowest distTo[] value).
+  - Add vertex to tree and relax all edges pointing from that vertex.
