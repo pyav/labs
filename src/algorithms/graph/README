@@ -277,5 +277,7 @@ Note: In eager implementation, the priority queue gets updated
 Dijkstra's algorithm: (shortest path)
 --------------------
   - Find shortest paths in graphs with non-negative edge weights.
-  - Consider vertices in increasing order of distance from s (non-tree vertex with the lowest distTo[] value).
+  - Consider vertices in increasing order of distance from s (non-tree vertex
+    with the lowest distTo[] value).
   - Add vertex to tree and relax all edges pointing from that vertex.
+
