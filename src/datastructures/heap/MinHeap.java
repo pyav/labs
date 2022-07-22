@@ -128,14 +128,12 @@ public class MinHeap {
     }
 
     void insertKey(int key) {
-        int i = 0;
-
         if (heapSize >= capacity) {
             System.out.println("ERROR: Heap array overflow");
         }
 
+        int i = heapSize;
         heapSize += 1;
-        i = heapSize - 1;
         heapArray[i] = key;
 
         while (i >= 0 && heapArray[parent(i)] > heapArray[i]) {
