@@ -43,4 +43,15 @@ recursively as follows:
    This implies that a binomial tree with n nodes consists of at most 1 + log n
    binomial trees.
 ## Time complexity analysis
+| Procedure  | Binary Heap | Binomial Heap | Fibonacci Heap |
+|            |(worst case) |(worst case)   | (worst case)   |
+|------------|-------------|---------------|----------------|
+|Making heap |             |               |                |
+|Insert node |             |               |                |
+|Find min    |             |               |                |
+|Extract min |             |               |                |
+|Union       |             |               |                |
+|Decrease key|             |               |                |
+|Delete node |             |               |                |
+
 
