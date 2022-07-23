@@ -42,4 +42,5 @@ recursively as follows:
 6. There can be at most one binomial tree for each order including zero order.
    This implies that a binomial tree with n nodes consists of at most 1 + log n
    binomial trees.
+## Time complexity analysis
 
