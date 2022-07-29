@@ -1,9 +1,10 @@
 /**
- * https://www.geeksforgeeks.org/edit-distance-dp-5/
+ * This program finds the minimum number of operations required to convert a
+ * string into another.
  *
  * Output:
  * ------
- *
+ * 2
  */
 
 public class EditDistance {
@@ -26,12 +27,6 @@ public class EditDistance {
                     len[i][j] = 1 + Math.min(Math.min(len[i-1][j], len[i][j-1]), len[i-1][j-1]);
                 }
             }
-        }
-        for (int i = 0; i <= m; i++) {
-            for (int j = 0; j <= n; j++) {
-                System.out.printf("%d ", len[i][j]);
-            }
-            System.out.println();
         }
         return len[m][n];
     }
