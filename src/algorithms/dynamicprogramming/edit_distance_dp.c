@@ -5,26 +5,20 @@
  *    2. Remove
  *    3. Replace
  *
- *
  * References
  * ----------
- *
  * (1) Introduction to Algorithms - Cormen, Leiserson, Rivest, Stein
  * (2) http://www.geeksforgeeks.org
  *
- *
  * NOTE
  * ----
- *
  * Though the book listed in (1) above discusses about few other opeartions, we
  * will concentrate our focus to only the three operations listed above.
  *
  *
  * Author
  * ------
- *
  * pyav
- *
  ******************************************************************************/
 
 #include <stdio.h>
