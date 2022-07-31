@@ -10,12 +10,12 @@
  * false
  */
 
-public class TrieInsertDelete {
+public class TrieInsertSearch {
 
     private static int childrenCount = 26;
 
     static class Node {
-        Node[] child = new Node[TrieInsertDelete.childrenCount];
+        Node[] child = new Node[TrieInsertSearch.childrenCount];
         boolean isEndOfWord;
         Node() {
             for (int i = 0; i < child.length; i++) {
@@ -56,10 +56,10 @@ public class TrieInsertDelete {
 
     public static void main(String[] args) {
         Node root = new Node();
-        TrieInsertDelete trieObj = new TrieInsertDelete();
+        TrieInsertSearch trieObj = new TrieInsertSearch();
         String[] sampleSpace = {"my", "name", "is", "pyav"};
         String[] query = {"is", "the", "name", "pyav", "mine"};
-        TrieInsertDelete obj = new TrieInsertDelete();
+        TrieInsertSearch obj = new TrieInsertSearch();
         for (int i = 0; i < sampleSpace.length; i++) {
             obj.insert(sampleSpace[i], root);
         }
