@@ -56,15 +56,14 @@ public class TrieInsertSearch {
 
     public static void main(String[] args) {
         Node root = new Node();
-        TrieInsertSearch trieObj = new TrieInsertSearch();
         String[] sampleSpace = {"my", "name", "is", "pyav"};
         String[] query = {"is", "the", "name", "pyav", "mine"};
-        TrieInsertSearch obj = new TrieInsertSearch();
+        TrieInsertSearch trieObj = new TrieInsertSearch();
         for (int i = 0; i < sampleSpace.length; i++) {
-            obj.insert(sampleSpace[i], root);
+            trieObj.insert(sampleSpace[i], root);
         }
         for (int i = 0; i < query.length; i++) {
-            System.out.println(obj.isPresent(query[i], root));
+            System.out.println(trieObj.isPresent(query[i], root));
         }
     }
 
