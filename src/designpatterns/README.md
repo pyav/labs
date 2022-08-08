@@ -66,7 +66,8 @@ the order slip, he never needs to directly communicate with the waitess.
 
 # SOLID Design Principles
 ## Single Responsibility Principle
-The class should do one task only.
+The class should do one task only. A class or module should have a single
+reason to change.
 
 ## Open Closed Principle
 Software entities should be open for extension but closed for modification.
