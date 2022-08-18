@@ -1,6 +1,13 @@
 Concurrent API Packages
 -----------------------
-java.util.concurrent
+java.util.concurrent:
+--------------------
+    - java.util.concurrent.atomic - classes such as AtomicInteger, AtomicLong.
+                                    Methods such as compareAndSet(),
+                                    decrementAndGet(), getAndSet()
+    - java.util.concurrent.locks - Lock interface. Methods such as lock(),
+                                   tryLock(), unlock()
+
 
 1. Synchronizers - Semaphore, CountDownLatch, CyclicBarrier, Exchanger, Phaser.
 2. Executors
@@ -9,6 +16,8 @@ java.util.concurrent
 
 Semaphore
 ---------
+    - A semaphore controls access to a shared resource through the use of a
+      counter.
     - java.util.concurrent.Semaphore
     - Semaphore sem = new Semaphore(1);
     - sem.acquire()
