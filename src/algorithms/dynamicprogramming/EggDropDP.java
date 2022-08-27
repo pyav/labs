@@ -26,7 +26,7 @@ public class EggDropDP {
         }
 
         for (i = 2; i <= numEggs; i++) {
-            for (j = 2; j <= floors; 	j++) {
+            for (j = 2; j <= floors; j++) {
                 record[i][j] = Integer.MAX_VALUE;
                 for (x = 1; x <= j; x++) {
                     result = 1 + max(record[i - 1][x - 1], record[i][j - x]);
