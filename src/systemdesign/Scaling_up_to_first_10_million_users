@@ -1,0 +1,159 @@
+https://www.youtube.com/watch?v=kKjm4ehYiMs
+-------------------------------------------
+
+Users > 1000:
+------------
+user -> Route 53 -> Load Balancer -> Instance1(Availability Zone1) -> Amazon RDS instance (primary)
+				  |						|
+				  |-> Instance2(Availability Zone2)		|
+										V
+								Amazon RDS instance(secondary)(Availability zone2)
+
+Load Balancer : For on-prem, it may be manually configured but for cloud -> managed load balancer service.
+Managed Load Balancer:  Application Load Balancer, Network Load Balancer, Classic Load Balancer
+
+Classic Load Balancer: On the edge, legacy load balancer
+Network Load Balancer: Layer 3 device
+Application Load Balancer: Layer 7
+
+
+Application Load Balancer (AWS manages): highly available, [1-65, 535], health checks,
+			   session stickiness, monitoring/logging, 
+			   content-based routing, container-based apps, websockets, http/2
+NOTE:
+----
+After Load Balancer, the instances, dbs, are in VPCs.
+
+
+Users > 10000:
+-------------
+user -> Amazon Route 53 -> Load Balancer -> Instance1 (Availability Zone1)--|
+					 |-> Instance2 (Availability Zone1)-|->	Amazon RDS read replica
+					 |-> Instance3 (Availability Zone1)-|->	Amazon RDS instance(primary)
+					 |-> Instance4 (Availability Zone1)-|		|
+					 |-> Instance5 (Availability Zone2)-|		V
+					 |-> Instance6 (Availability Zone2)-|-> Amazon RDS instance(secondary) (AZ2)
+					 |-> Instance7 (Availability Zone2)-|
+					 |-> Instance8 (Availability Zone2)-|->	Amazon RDS read replica (AZ2)
+
+
+Aurora - upto 15 read replicas - horizontal scaling mechanism db tier
+
+Shift some load around:
+----------------------
+user -> Amazon Route 53 -> Amazon CloudFront -> S3 bucket
+	     |
+	     V
+	Load Balancer -> Instances(AZ1) -> Amazon RDS instance(primary)
+	     |						|
+	     V						V
+	Instances(AZ2)				Amazon RDS instance(secondary)
+
+Amazon S3: (things that don't need db to be stored)
+---------
+ - Object-based storage
+ - highly durable
+ - great for static assets
+ - infinitely scalable
+ - objects up to 5 TB in size
+ - encryption at rest and in transit
+
+Amazon CloudFront: (CDN)
+-----------------
+ - cache content for faster delivery
+ - lower load upon origin
+ - dynamic and static content
+ - streaming video
+ - custom ssl certificates
+ - short time to live (TTL as little as 0 seconds)
+ - optimized for AWS
+
+
+No CDN : Response time more, server load more
+CDN for static content: Response time midway, server load midway
+CDN for static and dynamic content: response time least, server load least
+
+
+Shift some more load around:
+---------------------------
+user -> Amazon Route 53 -> Amazon CloudFront -> S3 bucket
+		|
+		V
+          Load Balancer
+		|
+		V
+	   Instances -> Cacahe nodes
+		|
+		V
+	    Amazon RDS instance(primary)
+
+Amazon ElasticCache: (HA managed in-memory cluster)
+-------------------
+ - Managed Memcached or Redis
+ - Scale from one to many nodes
+ - Self-healing (replaces dead instance)
+ - Single-digit millisecond speeds(usually)
+ - Multi-AZ deployments for availability
+
+Shift even more load around:
+---------------------------
+user -> Amazon Route 53 -> Amazon CloudFront -> S3 bucket
+	      |
+	      V
+	 Load Balancer
+	     |
+	     V	
+	 Instances -> Cache nodes
+	    |	   |-> DynamoDB table (schemaless data, non-relational data, metadata) (outside VPC)
+	    |
+	    V
+	Amazon RDS instance (primary)
+
+Amazon DynamoDB:
+---------------
+ - managed NoSQL database
+ - provisioned throughput
+ - fast, predictable performance
+ - fully distributed, fault tolerant
+ - json support
+ - items up to 400 KB
+ - ttl
+ - streams and triggers
+ - AWS application auto scaling
+ - global tables
+
+Auto scaling capacity:
+---------------------
+ - Automatic resizing of compute clusters
+ - Define minimum/maximum pool sizes
+ - Amazon CloudWatch metrics drive scaling
+ - On-Demand or Spot Instances
+ - aws autoscaling create-auto-scaling group
+     --auto-scaling-group-name MyGroup
+     --launch-configuration-name MyConfig
+     --min-size 4
+     --max-size 200
+     --availability-zones us-west-2c, us-west-2b
+
+Users > 500,000:
+---------------
+usre -> Amazon Route53 -> Amazon CloudFront -> S3 bucket
+             |
+	     V
+	 Load Balancer -> Instances (AZ2) [Instances part of auto scaling group]
+	     	|		|-> Amazon RDS read replica (AZ2)
+		V		|-> Cache node (AZ2)
+	  Instances (AZ1) [Instances part of auto sclaing group]
+		|-> Amazon RDS instance (primary) (AZ1) -> Amazon RDS instance (secondary)(AZ2)
+		|-> Amazon RDS read replicas
+		|-> Cache node
+		|-> DynamoDB table (outside VPC)
+
+AWS system manager: (automate operational tasks)
+------------------
+ - in the cloud and on premises
+ - managed remote access(no bastions)
+ - automate common tasks
+ - compliance management and reporting
+ - basic and advanced parameter store
+
