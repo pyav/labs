@@ -13,7 +13,7 @@
  * 
  */
 
-package designpatterns.behavioralpatterns;
+package designpatterns.behavioral;
 
 import java.util.ArrayList;
 import java.util.List;

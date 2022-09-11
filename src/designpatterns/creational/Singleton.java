@@ -4,7 +4,7 @@
  * @author pyav 
  */
 
-package designpatterns.creationalpatterns;
+package designpatterns.creational;
 
 public final class Singleton {
 	private static volatile Singleton instance = null;

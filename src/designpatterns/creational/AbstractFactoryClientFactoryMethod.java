@@ -5,7 +5,7 @@
  *
  */
 
-package designpatterns.creationalpatterns;
+package designpatterns.creational;
 
 abstract class CPU {
 	void printArchType() {
