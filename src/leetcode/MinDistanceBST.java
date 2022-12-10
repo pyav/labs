@@ -82,7 +82,6 @@ public class MinDistanceBST {
         root2.right.left = new TreeNode(12);
         root.right.right = new TreeNode(49);
         System.out.println(new MinDistanceBST().minDiffInBST(root2));
-
     }
 
 }
