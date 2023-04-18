@@ -1,3 +1,4 @@
+package designpatterns.structural.decorator;
 
 public class DarkRoast extends Beverage {
 

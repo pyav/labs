@@ -1,3 +1,4 @@
+package designpatterns.structural.decorator;
 /**
  * Following code demonstrates Decorator Pattern. There are several Beverages and condiments.
  * The Beverages will be decorated at runtime.

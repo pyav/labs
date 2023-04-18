@@ -1,3 +1,4 @@
+package designpatterns.structural.decorator;
 
 class Soy extends CondimentDecorator {
 
