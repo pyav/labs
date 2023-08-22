@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * https://leetcode.com/problems/number-of-employees-who-met-the-target/
  *
@@ -8,6 +6,8 @@ import java.util.Arrays;
  * 3
  * 0
  */
+
+import java.util.Arrays;
 
 public class EmployeesMetTarget {
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
