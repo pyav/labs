@@ -3,7 +3,9 @@
  *
  * Output:
  * ------
- *
+ * 8
+ * 11
+ * 12
  */
 
 public class RangeSum2D {
@@ -40,15 +42,6 @@ public class RangeSum2D {
         return val;
     }
 
-    private void printMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.printf("%d ", matrix[i][j]);
-            }
-            System.out.println();
-        }
-    }
-
     public static void main(String[] args) {
         int[][] matrix = {
             {3,0,1,4,2},
@@ -58,7 +51,6 @@ public class RangeSum2D {
             {1,0,3,0,5}
         };
         RangeSum2D obj = new RangeSum2D(matrix);
-        obj.printMatrix(matrix);
         System.out.println(obj.sumRegion(2,1,4,3));
         System.out.println(obj.sumRegion(1,1,2,2));
         System.out.println(obj.sumRegion(1,2,2,4));
