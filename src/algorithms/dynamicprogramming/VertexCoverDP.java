@@ -2,6 +2,7 @@
  * Vertex Cover problem for a Binary Tree
  */
 
+
 class VertexCoverDP
 {
 	static int min(int x, int y)
