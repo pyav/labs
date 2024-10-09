@@ -3,7 +3,7 @@
  *
  * Output:
  * ------
- *
+ * true
  */
 
 package leetcode;
