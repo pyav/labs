@@ -1,7 +1,7 @@
 /**
  * https://leetcode.com/problems/find-subarrays-with-equal-sum/description/
  *
- * Otuput:
+ * Output:
  * ------
  * true
  * false
