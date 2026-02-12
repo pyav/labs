@@ -26,16 +26,6 @@ public class FrontMiddleBackQueue {
     }
     
     public void pushMiddle(int val) {
-        /*int size = list.size();
-        if (size < 2) {
-        	this.pushFront(val);
-        } else if (size == 2) {
-        	list.add(1, val);
-        } else if  (size %2 == 0) {
-        		list.add(size/2 - 1, val);
-        } else {
-        		list.add(size/2, val);
-        }*/
         list.add(list.size()/2, val);
     }
     
@@ -48,20 +38,6 @@ public class FrontMiddleBackQueue {
     }
     
     public int popMiddle() {
-    	/*int val = -1;
-        if (list.isEmpty()) return val;
-        
-        int size = list.size();
-        if (size == 1) {
-        	return list.remove(0);
-        } else {
-        	if (size %2 == 0) {
-        		val = list.remove(size/2 - 1);
-        	} else {
-        		val = list.remove(size/2);
-        	}
-        }
-        return val;*/
     	if (list.isEmpty()) return -1;
         return list.remove((list.size()-1)/2);
     }
