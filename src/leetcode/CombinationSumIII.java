@@ -12,15 +12,21 @@ import java.util.*;
 
 public class CombinationSumIII {
 	
-	private void calcCombinations(int start, int n, int k, List<Integer> curr, List<List<Integer>> result) {
-		if (k == 0 && curr.stream().mapToInt(Integer::intValue).sum() == n) {
+	private void calcCombinations(int start, int n, int k, List<Integer> curr, List<List<Integer>> result, int sum) {
+		//if (k == 0 && curr.stream().mapToInt(Integer::intValue).sum() == n) {
+		if (sum > n) {
+			return;
+		}
+		if (k == 0 && sum == n) {
 			result.add(new ArrayList<>(curr));
 			return;
 		}
 		
 		for (int i = start; i <= 9; i++) {
 			curr.add(i);
-			calcCombinations(i+1, n, k-1, curr, result);
+			sum += i;
+			calcCombinations(i+1, n, k-1, curr, result, sum);
+			sum -= curr.get(curr.size()-1);
 			curr.remove(curr.size()-1);
 		}
 	}
@@ -29,7 +35,7 @@ public class CombinationSumIII {
 		List<Integer> curr = new ArrayList<>();
         List<List<Integer>> result = new ArrayList<>();
         
-        calcCombinations(1, n, k, curr, result);
+        calcCombinations(1, n, k, curr, result, 0);
         
         return result;
     }
