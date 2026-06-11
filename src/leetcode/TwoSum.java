@@ -6,29 +6,24 @@
  * 0 1
  */
 
-package leetcode;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum{
     public int[] twoSum(int[] nums, int target) {
-        int[] indexes = new int[2];
-        boolean found = false;
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
-            for (int j = i+1; j < nums.length; j++) {
-                if (target == nums[i]+nums[j]) {
-                    indexes[0]=i;
-                    indexes[1]=j;
-                    found=true;
-                    break;
-                }
+            int comp = target - nums[i];
+            if (map.containsKey(comp)) {
+                return new int[] {i, map.get(comp)};
             }
-            if (found)
-                break;
+            map.put(nums[i], i);
         }
-        return indexes;
+        return new int[]{-1,-1};
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,3};
+        int[] nums = {3,2,4};
         int[] result = new TwoSum().twoSum(nums, 6);
         System.out.printf("%d %d", result[0], result[1]);
     }
