@@ -1,0 +1,121 @@
+\documentclass[9pt, letterpaper]{article}
+\usepackage[top=0.32in, bottom=0.32in, left=0.46in, right=0.46in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{dark}{HTML}{1A1A1A}
+\definecolor{mid}{HTML}{333333}
+\definecolor{light}{HTML}{777777}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\bfseries\normalsize\color{accent}}{}{0em}{\MakeUppercase}
+  [{\color{accent}\hrule height 0.5pt}\vspace{1pt}]
+\titlespacing{\section}{0pt}{4pt}{1pt}
+
+\setlist[itemize]{leftmargin=1.0em,itemsep=0.4pt,topsep=0.5pt,parsep=0pt,
+  label={\color{accent}\textbullet}}
+
+% Single consolidated job line: Title | Company → Client ......... Date
+\newcommand{\job}[3]{%
+  \vspace{1pt}\noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{dark}#1}\enspace{\color{light}|}\enspace{\color{accent}#2}
+    & {\small\itshape\color{light}#3}
+  \end{tabularx}\vspace{-1pt}}
+
+\newcommand{\tech}[1]{%
+  \noindent{\small\color{light}\textbf{Tech:}\enspace\textit{#1}}\vspace{1pt}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\large\bfseries\color{dark}Anand Verma}\\[2pt]
+{\small\color{light}
+  Lead Software Engineer\enspace$\cdot$\enspace
+  Distributed Systems \& Platform Architecture\enspace$\cdot$\enspace
+  14+ Years\enspace$\cdot$\enspace Bengaluru, India}\\[1pt]
+{\small\color{mid}
+  \href{tel:+918197998597}{+91\,8197998597}\enspace$\cdot$\enspace
+  \href{mailto:verma.anand09@gmail.com}{verma.anand09@gmail.com}\enspace$\cdot$\enspace
+  \href{https://www.linkedin.com/in/vermaanand}{\color{accent}LinkedIn}\enspace$\cdot$\enspace
+  \href{https://github.com/pyav}{\color{accent}GitHub}\enspace$\cdot$\enspace
+  \href{https://leetcode.com/pyav/}{\color{accent}LeetCode}\enspace$\cdot$\enspace
+  \href{https://pyav.blogspot.com}{\color{accent}Blog}\enspace$\cdot$\enspace
+  \href{https://x.com/pyav}{\color{accent}X}\enspace$\cdot$\enspace
+  \href{https://www.quora.com/profile/Anand-Verma-28}{\color{accent}Quora}\enspace$\cdot$\enspace
+  \href{https://www.tripoto.com/profile/anandverma}{\color{accent}Tripoto}}
+\end{center}
+\vspace{-3pt}
+
+\section{Summary}
+Lead engineer with \textbf{14+ years} driving technical roadmaps, cross-team architecture decisions,
+and distributed systems at scale. Led teams of up to \textbf{12 engineers}, delivered
+\textbf{30$\times$ latency gains} and \textbf{\$250K+ in cost savings}. Proven track record of setting technical direction — defining system design standards, API contracts, and observability patterns — that scaled beyond individual teams. Deep hands-on expertise in distributed systems, gRPC, cloud infrastructure (AWS, Kubernetes), and security engineering, with a demonstrated ability to translate complex architectural decisions into measurable business outcomes.
+\section{Core Skills}
+\textbf{Languages:} Java, Kotlin, Python, Go, Node.js, TypeScript, C\enspace$\cdot$\enspace
+\textbf{Frameworks:} Spring Boot, Spring MVC, Swagger/OpenAPI
+\enspace$\cdot$\enspace \textbf{Cloud \& Infra:} AWS (SQS, Lambda, DynamoDB, etc.), Kubernetes, Kafka, Spinnaker\enspace$\cdot$\enspace
+\textbf{Protocols:} gRPC, REST, mTLS, SSH, LDAP\enspace$\cdot$\enspace
+\textbf{Observability:} Datadog, Splunk\enspace$\cdot$\enspace
+\textbf{Testing:} Gatling, JUnit\enspace$\cdot$\enspace
+\textbf{DB:} Oracle RDBMS, MongoDB
+
+\section{Work Experience}
+
+\job{Lead Software Engineer}{EPAM Systems $\rightarrow$ Expedia Group (Advertiser Platform)}{Mar 2024 -- Jun 2026}
+\begin{itemize}
+\item Led \textbf{12 engineers} across multiple locations; owned end-to-end technical roadmap and architectural direction, system design reviews, CI/CD pipelines, and technical leadership across Media Solutions Publisher \& Advertiser teams.
+\item Re-architected inventory forecasting (data sharding, pre-computation, async parallelism, algorithm optimisation) --- \textbf{150s $\rightarrow$ 5s (30$\times$)}, saving \textbf{\$65K/year}.
+\item Designed REST APIs and gRPC services for Flight Search Listing and advertiser targeting; used Kafka for real-time event streaming; established Gatling load-testing (3$\times$ TPS) and Datadog/Splunk observability standards.
+\item Established API design standards, ADRs, and observability patterns adopted across 3 platform teams beyond the immediate squad; mentored senior engineers on system design, scalability, and distributed systems tradeoffs.
+\end{itemize}
+\tech{Kotlin, gRPC, REST, Spring Boot, Kafka, Datadog, Spinnaker, Splunk, Gatling, Kubernetes}
+
+\job{Lead Software Engineer}{EPAM Systems $\rightarrow$ Amazon AWSMP (Seller Onboarding)}{Sep 2022 -- Mar 2024}
+\begin{itemize}
+\item Led \textbf{6 engineers}; delivered Legal Representative Verification and Bank Account Verification --- REST APIs on event-driven SQS/Lambda with idempotency, DLQ, and callback webhooks.
+\item Executed zero-downtime seller registry migration across 3 services via dual-write strategy.
+\end{itemize}
+\tech{Java, Spring MVC, REST, AWS (SQS, DynamoDB, Lambda, etc.), JUnit, TypeScript}
+
+\job{Software Engineer}{Prismo Systems}{Jul 2021 -- Jul 2022}
+\begin{itemize}
+\item Built backend API to collect telemetry data from cloud cluster nodes and transfer to analytics engine for anomaly detection (Node.js/MongoDB); gRPC-based RBAC access control API (Go) for multi-tenant cloud.
+\end{itemize}
+\tech{Node.js, Express, MongoDB, gRPC, Go}
+
+\job{Senior Member of Technical Staff}{Oracle}{Dec 2015 -- Jul 2021}
+\begin{itemize}
+\item \textbf{66\% downtime reduction} (\textasciitilde90 $\rightarrow$ \textasciitilde30 min/host): custom Python scheduling algorithm for Oracle Public Cloud control plane upgrades using dependency-graph-based host ordering.
+\item \textbf{20\% cost reduction (\textasciitilde\$190K)}: Cloud at Customer control plane migration to public cloud; cut setup from 3--4 months to weeks.
+\item Architected mTLS-based inter-service security standard adopted across Weblogic-deployed REST backends in Oracle Cloud — covering certificate lifecycle, mutual authentication, and automated rotation; delivered DB lifecycle management and Firewall lifecycle APIs for OCI.
+\item Enhanced Enterprise User Security Manager with SSL/LDAP (OID) --- 20\% overhead reduction; implemented regex-based column-level masking in Oracle DB engine (C, PL/SQL, GDB).
+\end{itemize}
+\tech{Java, Python, REST, RDBMS, YAML, Swagger/OpenAPI, Jersey, Dropwizard, Weblogic, mTLS, C, PL/SQL, LDAP, TLS}
+
+\job{Tech Lead}{Alcatel-Lucent}{Dec 2014 -- Nov 2015}
+\begin{itemize}
+\item CIS-compliant OS hardening for Small Cell Gateway (Bash/Linux); QA team mentoring and test standards.
+\end{itemize}
+
+\job{Software Engineer}{Cisco Systems}{Dec 2011 -- Dec 2014}
+\begin{itemize}
+\item Product Security Baseline for Data Center switches (C, PAM, Linux): password mgmt, SSH hardening, OpenSSH for VDCs; \textbf{30\%+ security improvement}; CVE analysis on OpenSSL, SSH/SSL/LDAP.
+\item NIST-SP \& Common Criteria gap analysis (\textbf{30\% delivery improvement}); cryptography training. \textbf{White \& Green Belt in Security.}
+\end{itemize}
+\tech{C, PAM, OpenSSH, OpenSSL, Linux, Cryptography}
+
+\section{Education}
+\noindent\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{B.Tech, Information Technology}\enspace{\color{light}|}\enspace NIT Durgapur
+& {\small\itshape\color{light}2007 -- 2011}
+\end{tabularx}
+
+\end{document}
