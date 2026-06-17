@@ -77,3 +77,8 @@ Following command can be executed to build the binary from a Go file:
 
     go build hello.go
 
+### Convert .tex to .pdf
+Following command converts from .tex file to .pdf (e.g. see resume directory):
+
+    pdflatex <path_to_.tex_file>
+
