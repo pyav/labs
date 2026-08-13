@@ -2,7 +2,6 @@
  * Output:
  * ------
  * 5 4 2 3 1 0 
- *
  */
 
 import java.util.ArrayList;
