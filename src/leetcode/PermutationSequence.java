@@ -31,16 +31,6 @@ public class PermutationSequence {
         return result.toString();
     }
 
-    private void reverse(int[] nums, int left, int right) {
-        while (left < right) {
-            int temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
-            left++;
-            right--;
-        }
-    }
-
     private int getNextHigherNumber(int number, int[] count) {
         for (int value = number + 1; value < count.length; value++) {
             if (count[value] > 0) {
