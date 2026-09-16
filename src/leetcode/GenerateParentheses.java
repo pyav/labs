@@ -12,16 +12,14 @@ import java.util.*;
 public class GenerateParentheses {
     public List<String> generateParenthesis(int n) {
         Queue<String> q = new LinkedList<>();
-        Set<String> set = new HashSet<>();
         q.add("()");
-        set.add("()");
         n--;
 
         while(n > 0) {
             int size = q.size();
+            Set<String> set = new HashSet<>();
             while(size > 0) {
                 String val = q.poll();
-                StringBuilder sb = new StringBuilder();
                 for (int i = 0; i <= val.length(); i++) {
                     String creation = val.substring(0, i) + "()" + val.substring(i, val.length());
                     if (set.contains(creation)) {
