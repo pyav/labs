@@ -1,5 +1,5 @@
 \documentclass[9pt, letterpaper]{article}
-\usepackage[top=0.32in, bottom=0.32in, left=0.46in, right=0.46in]{geometry}
+\usepackage[top=0.08in, bottom=0.08in, left=0.26in, right=0.26in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
 \definecolor{accent}{HTML}{1F4E79}
@@ -38,9 +38,8 @@
 \begin{center}
 {\large\bfseries\color{dark}Anand Verma}\\[2pt]
 {\small\color{light}
-  Lead Software Engineer\enspace$\cdot$\enspace
   Distributed Systems \& Platform Architecture\enspace$\cdot$\enspace
-  14+ Years\enspace$\cdot$\enspace Bengaluru, India}\\[1pt]
+  15 Years\enspace$\cdot$\enspace Bengaluru, India}\\[1pt]
 {\small\color{mid}
   \href{tel:+918197998597}{+91\,8197998597}\enspace$\cdot$\enspace
   \href{mailto:verma.anand09@gmail.com}{verma.anand09@gmail.com}\enspace$\cdot$\enspace
@@ -55,17 +54,18 @@
 \vspace{-3pt}
 
 \section{Summary}
-Lead engineer with \textbf{14+ years} driving technical roadmaps, cross-team architecture decisions,
-and distributed systems at scale. Led teams of up to \textbf{12 engineers}, delivered
-\textbf{30$\times$ latency gains} and \textbf{\$250K+ in cost savings}. Proven track record of setting technical direction — defining system design standards, API contracts, and observability patterns — that scaled beyond individual teams. Deep hands-on expertise in distributed systems, gRPC, cloud infrastructure (AWS, Kubernetes), and security engineering, with a demonstrated ability to translate complex architectural decisions into measurable business outcomes.
+Senior Staff level backend engineer with 15 years designing and scaling fault-tolerant distributed
+systems --- event-streaming platforms, gRPC/REST microservices architectures, and globally distributed cloud infrastructure. Re-architected core inventory-forecasting systems (data sharding, pre-computation, async parallelism), cutting processing time 150s$\rightarrow$5s (30$\times$) and saving \$65K/year; separately cut Oracle Cloud's global upgrade orchestration downtime 66\% via a custom dependency-graph scheduling algorithm. Built and scaled Kafka-based streaming and gRPC/REST services on Kubernetes and AWS, with load-testing (Gatling, 3$\times$ TPS) and observability (Datadog/Splunk) practices adopted across 3+ platform teams beyond my own. Led engineering teams of up to 12 across multiple locations, setting API design standards and architectural direction. \$250K+ in cumulative measurable cost savings and performance gains at global scale.
 \section{Core Skills}
 \textbf{Languages:} Java, Kotlin, Python, Go, Node.js, TypeScript, C\enspace$\cdot$\enspace
 \textbf{Frameworks:} Spring Boot, Spring MVC, Swagger/OpenAPI
-\enspace$\cdot$\enspace \textbf{Cloud \& Infra:} AWS (SQS, Lambda, DynamoDB, etc.), Kubernetes, Kafka, Spinnaker\enspace$\cdot$\enspace
+\enspace$\cdot$\enspace \textbf{Architecture:} Microservices, Event-Driven, Fault-Tolerant Distributed Systems\enspace$\cdot$\enspace
+\textbf{Cloud \& Infra:} AWS (SQS, Lambda, DynamoDB, etc.), OCI (Oracle Cloud
+Infrastructure), Docker, Kubernetes, Kafka, Spinnaker\enspace$\cdot$\enspace
 \textbf{Protocols:} gRPC, REST, mTLS, SSH, LDAP\enspace$\cdot$\enspace
 \textbf{Observability:} Datadog, Splunk\enspace$\cdot$\enspace
 \textbf{Testing:} Gatling, JUnit\enspace$\cdot$\enspace
-\textbf{DB:} Oracle RDBMS, MongoDB
+\textbf{DB:} Oracle RDBMS, MongoDB (NoSQL)
 
 \section{Work Experience}
 
@@ -73,7 +73,7 @@ and distributed systems at scale. Led teams of up to \textbf{12 engineers}, deli
 \begin{itemize}
 \item Led \textbf{12 engineers} across multiple locations; owned end-to-end technical roadmap and architectural direction, system design reviews, CI/CD pipelines, and technical leadership across Media Solutions Publisher \& Advertiser teams.
 \item Re-architected inventory forecasting (data sharding, pre-computation, async parallelism, algorithm optimisation) --- \textbf{150s $\rightarrow$ 5s (30$\times$)}, saving \textbf{\$65K/year}.
-\item Designed REST APIs and gRPC services for Flight Search Listing and advertiser targeting; used Kafka for real-time event streaming; established Gatling load-testing (3$\times$ TPS) and Datadog/Splunk observability standards.
+\item Designed REST APIs and gRPC microservices for Flight Search Listing and advertiser targeting; used Kafka for real-time event streaming; established Gatling load-testing (3$\times$ TPS) and Datadog/Splunk observability standards.
 \item Established API design standards, ADRs, and observability patterns adopted across 3 platform teams beyond the immediate squad; mentored senior engineers on system design, scalability, and distributed systems tradeoffs.
 \end{itemize}
 \tech{Kotlin, gRPC, REST, Spring Boot, Kafka, Datadog, Spinnaker, Splunk, Gatling, Kubernetes}
@@ -96,7 +96,7 @@ and distributed systems at scale. Led teams of up to \textbf{12 engineers}, deli
 \item \textbf{66\% downtime reduction} (\textasciitilde90 $\rightarrow$ \textasciitilde30 min/host): custom Python scheduling algorithm for Oracle Public Cloud control plane upgrades using dependency-graph-based host ordering.
 \item \textbf{20\% cost reduction (\textasciitilde\$190K)}: Cloud at Customer control plane migration to public cloud; cut setup from 3--4 months to weeks.
 \item Architected mTLS-based inter-service security standard adopted across Weblogic-deployed REST backends in Oracle Cloud — covering certificate lifecycle, mutual authentication, and automated rotation; delivered DB lifecycle management and Firewall lifecycle APIs for OCI.
-\item Enhanced Enterprise User Security Manager with SSL/LDAP (OID) --- 20\% overhead reduction; implemented regex-based column-level masking in Oracle DB engine (C, PL/SQL, GDB).
+\item Built Enterprise User Security Manager with SSL/LDAP (OID) --- 20\% overhead reduction; implemented regex-based column-level masking in Oracle DB engine (C, PL/SQL, GDB).
 \end{itemize}
 \tech{Java, Python, REST, RDBMS, YAML, Swagger/OpenAPI, Jersey, Dropwizard, Weblogic, mTLS, C, PL/SQL, LDAP, TLS}
 
