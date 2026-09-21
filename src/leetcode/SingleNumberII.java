@@ -3,8 +3,8 @@
  *
  * Output:
  * ------
- * 3
- * 99
+ * 1
+ * 98
  */
 
 import java.util.Map;
@@ -14,16 +14,9 @@ import java.util.Map.Entry;
 public class SingleNumberII {
 
     public int singleNumber(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], map.getOrDefault(nums[i], 0)+1);
-        }
-        int result = -1;
-        for (Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 1) {
-                result = entry.getKey();
-                break;
-            }
+        int result = 0;
+        for (int num : nums) {
+            result ^= num;
         }
         return result;
     }
