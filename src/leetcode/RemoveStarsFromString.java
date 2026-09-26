@@ -11,21 +11,19 @@ import java.util.Stack;
 
 public class RemoveStarsFromString {
     public String removeStars(String s) {
-        Stack<Character> stack1 = new Stack<Character>();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '*') {
-                if (!stack1.isEmpty()) {
-                    stack1.pop();
-                }
+        Stack<Character> stack = new Stack<Character>();
+        for(Character t : s.toCharArray()) {
+            if (t == '*') {
+                stack.pop();
             } else {
-                stack1.push(s.charAt(i));
+                stack.push(t);
             }
         }
-        String result = "";
-        while (!stack1.isEmpty()) {
-            result += stack1.pop();
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.insert(0, stack.pop());
         }
-        return new StringBuilder(result).reverse().toString();
+        return sb.toString();
     }
     public static void main(String[] args) {
         System.out.println(new RemoveStarsFromString().removeStars("leet**cod*e"));
